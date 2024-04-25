@@ -1,0 +1,49 @@
+---
+const { title } = Astro.props;
+import Background from '@components/Background.astro';
+import '@fontsource-variable/orbitron';
+import '@fontsource/kanit';
+import '@fontsource/paytone-one';
+import '@fontsource-variable/rubik';
+
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="EmprenDev - Desarrollo de páginas web para emprendedores y Pymes"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Background/>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  html {
+		scroll-behavior: smooth;
+}
+a, span, h2 {
+  font-family: 'Orbitron Variable', sans-serif;
+}
+p {
+  font-family: 'Kanit', sans-serif;
+}
+h1, h4 {
+    font-family: 'Paytone One', sans-serif;
+  }
+h3{
+  font-family: 'Rubik Variable', sans-serif;
+}  
+
+</style>

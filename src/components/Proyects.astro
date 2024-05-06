@@ -1,5 +1,5 @@
 ---
-const { title, id, img1, description } = Astro.props;
+const { title, id, img, url, description } = Astro.props;
 ---
 
 <section
@@ -7,10 +7,10 @@ const { title, id, img1, description } = Astro.props;
   class="h-full md:h-screen py-4 md:py-24 px-4 md:px-32 flex flex-col-reverse lg:flex-row gap-4 md:gap-12"
 >
   <div class="py-6 md:mt-0 z-10">
-   <a href="https://landing-ariel-martinezs-projects.vercel.app" target="_blank">
+   <a href={url} target="_blank">
     <img
     class="cursor-pointer rounded-xl hover:animate-pulse w-fit object-cover lg:w-[600px] h-2/3 lg:h-full"
-    src={img1}
+    src={img}
     alt="landingPage"
   />
    </a>

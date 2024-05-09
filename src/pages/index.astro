@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from '@components/Hero.astro'
-import Navbar from '@components/Navbar.astro'
+import Navbar from '@components/Navbar'
 import SectionPrice from '@components/SectionPrice.astro'
 import Proyects from '@components/Proyects.astro'
 import WhatsappButton from "@components/WhatsappButton.astro";
@@ -12,7 +12,7 @@ import Footer from '@components/Footer.astro'
 
 <Layout title="EmprenDev | Desarrollo de websites">
   <main class="flex flex-col justify-center items-center">
-    <Navbar />
+    <Navbar client:load />
   <div class="mx-32">
     <Hero />
     <Features/>

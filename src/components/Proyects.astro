@@ -4,9 +4,9 @@ const { title, id, img, url, description } = Astro.props;
 
 <section
   id={id}
-  class="h-full md:h-screen py-4 md:py-24 px-4 md:px-32 flex flex-col-reverse lg:flex-row gap-4 md:gap-12"
+  class="h-full md:h-screen pt-8 md:py-24 px-4 md:px-32 flex flex-col-reverse lg:flex-row gap-4 md:gap-12"
 >
-  <div class="py-6 md:mt-0 z-10">
+  <div class="mt-4 md:mt-24 z-10 flex flex-col gap-8">
     <a href={url} target="_blank">
       <img
         class="cursor-pointer rounded-xl hover:animate-pulse w-fit object-cover lg:w-[600px] h-2/3 lg:h-full"
@@ -14,6 +14,7 @@ const { title, id, img, url, description } = Astro.props;
         alt="landingPage"
       />
     </a>
+    <span class="text-xs text-center md:text-lg">Haz click en la imagen para ver un ejemplo.</span>
   </div>
   <div class="w-full md:w-[600px]">
     <h3 class="text-4xl md:text-6xl text-center text-black pt-16 md:pt-8">

@@ -15,8 +15,8 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_ohdovz7", "template_da4yhop", e.target, {
-        publicKey: "Of7EFnHz3zmSna4Kc",
+      .sendForm(import.meta.env.PUBLIC_SERVICE, import.meta.env.PUBLIC_TEMPLATE, e.target, {
+        publicKey: import.meta.env.PUBLIC_KEY,
       })
       .then(
         () => {

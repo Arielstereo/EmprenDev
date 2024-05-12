@@ -40,7 +40,7 @@ const Navbar = () => {
           )}
         </button>
         <a href="#" className={`flex flex-row-reverse lg:flex-row gap-2 mx-auto lg:mx-0 py-2 ${!isOpen ? "block" : "hidden"}`}>
-          <svg
+          {/* <svg
             className="w-9 h-9 mt-2"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 256 256"
@@ -49,8 +49,9 @@ const Navbar = () => {
               fill="#000"
               d="M71.68 97.22L34.74 128l36.94 30.78a12 12 0 1 1-15.36 18.44l-48-40a12 12 0 0 1 0-18.44l48-40a12 12 0 0 1 15.36 18.44m176 21.56l-48-40a12 12 0 1 0-15.36 18.44L221.26 128l-36.94 30.78a12 12 0 1 0 15.36 18.44l48-40a12 12 0 0 0 0-18.44M164.1 28.72a12 12 0 0 0-15.38 7.18l-64 176a12 12 0 0 0 7.18 15.37a11.79 11.79 0 0 0 4.1.73a12 12 0 0 0 11.28-7.9l64-176a12 12 0 0 0-7.18-15.38"
             ></path>
-          </svg>
-          <span className="text-black pt-3 text-lg"> EmprenDev</span>
+          </svg> */}
+          <img src="/logo.png" alt="logo" className="w-8 h-8 md:w-10 md:h-10" />
+          <span className="text-black md:pt-2 text-lg"> EmprenDev</span>
         </a>
         <ul
           className={`flex flex-col items-center lg:flex lg:flex-row py-4 gap-4 md:gap-16" ${

@@ -2,8 +2,18 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const ContactForm = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    });
+  }, []);
+
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -53,7 +63,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full md:w-3/4 lg:w-full mx-auto p-8 lg:px-20 lg:py-16 bg-slate-800 shadow-md shadow-black rounded-lg">
+    <div data-aos="fade-right" className="w-full md:w-3/4 lg:w-full mx-auto p-8 lg:px-20 lg:py-16 bg-slate-800 shadow-md shadow-black rounded-lg">
       <form
         onSubmit={sendEmail}
         className="flex flex-col lg:flex-row gap-4 md:gap-16"

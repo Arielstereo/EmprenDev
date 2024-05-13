@@ -64,8 +64,8 @@ const CardPrice = ({
           </div>
           <span className="text-slate-950 font-semibold text-sm">{check1}</span>
         </li>
-        <li class="mb-4 flex">
-          <div class="rounded-full bg-transparent w-5 h-5 flex justify-center items-center mr-4">
+        <li className="mb-4 flex">
+          <div className="rounded-full bg-transparent w-5 h-5 flex justify-center items-center mr-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"

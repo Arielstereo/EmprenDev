@@ -63,10 +63,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div data-aos="fade-right" className="w-full md:w-3/4 lg:w-full mx-auto p-8 lg:px-20 lg:py-16 bg-slate-800 shadow-md shadow-black rounded-lg">
+    <div data-aos="zoom-in-up" className="w-full lg:w-fit mx-auto p-8 lg:p-16 mb-48 lg:mb-12 bg-gradient-to-r from-blue-800 to-blue-600 shadow-md shadow-black rounded-lg">
       <form
         onSubmit={sendEmail}
-        className="flex flex-col lg:flex-row gap-4 md:gap-16"
+        className="flex flex-col gap-4 md:gap-8"
       >
         <div className="flex flex-col gap-4">
           <div>
@@ -142,7 +142,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-800 border hover:border-white hover:border-2 p-2 text-white rounded-md text-lg"
+            className="w-full bg-slate-800 hover:bg-green-600 border-white border-2 p-2 text-white font-semibold rounded-md text-lg"
           >
             Enviar consulta
           </button>

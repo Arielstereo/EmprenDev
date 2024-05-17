@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "animate.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,12 +9,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="py-4 px-16 lg:hover:py-8 fixed top-0 z-50 w-full bg-white shadow-sm shadow-slate-300 transition-all">
+    <nav className="py-4 px-16 lg:hover:py-8 fixed top-0 z-50 w-full bg-white shadow-sm shadow-slate-800">
       <div className={`flex gap-4 lg:justify-between lg:px-8 ${!isOpen ? "flex-row" : "flex-col"}`}>
         <button onClick={toggleMenu} className="lg:hidden block">
           {!isOpen ? (
             <svg
-              className="fill-current text-black"
+              className={`h-6 w-6 transform ${isOpen ? 'rotate-90' : 'rotate-0'} transition-transform duration-300`}
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
@@ -23,7 +24,7 @@ const Navbar = () => {
             </svg>
           ) : (
             <svg
-              className="mt-2"
+              className={`h-6 w-6 transform mt-4 ${isOpen ? 'rotate-90' : 'rotate-0'} transition-transform duration-300`}
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
@@ -39,28 +40,18 @@ const Navbar = () => {
             </svg>
           )}
         </button>
-        <a href="#" className={`flex flex-row-reverse lg:flex-row gap-2 mx-auto lg:mx-0 py-2 ${!isOpen ? "block" : "hidden"}`}>
-          {/* <svg
-            className="w-9 h-9 mt-2"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 256 256"
-          >
-            <path
-              fill="#000"
-              d="M71.68 97.22L34.74 128l36.94 30.78a12 12 0 1 1-15.36 18.44l-48-40a12 12 0 0 1 0-18.44l48-40a12 12 0 0 1 15.36 18.44m176 21.56l-48-40a12 12 0 1 0-15.36 18.44L221.26 128l-36.94 30.78a12 12 0 1 0 15.36 18.44l48-40a12 12 0 0 0 0-18.44M164.1 28.72a12 12 0 0 0-15.38 7.18l-64 176a12 12 0 0 0 7.18 15.37a11.79 11.79 0 0 0 4.1.73a12 12 0 0 0 11.28-7.9l64-176a12 12 0 0 0-7.18-15.38"
-            ></path>
-          </svg> */}
+        <a href="#" className={`flex flex-row-reverse lg:flex-row gap-2 mx-auto lg:mx-0 py-2 mt-2 ${!isOpen ? "block" : "hidden"}`}>
           <img src="/logo.png" alt="logo" className="w-8 h-8 md:w-10 md:h-10" />
           <span className="text-black md:pt-2 text-lg"> EmprenDev</span>
         </a>
         <ul
-          className={`flex flex-col items-center lg:flex lg:flex-row py-4 gap-4 md:gap-16" ${
-            isOpen ? "flex" : "hidden"
+          className={`flex flex-col items-center lg:flex lg:flex-row py-4 gap-4 md:gap-16 " ${
+            isOpen ? "h-full animate__animated animate__slideInDown animate__slower" : "hidden"
           }`}
         >
           <li className="font-semibold text-xl">
             <a
-              className="lg:hidden text-slate-950 text-base hover:text-sky-400"
+              className="lg:hidden text-slate-950 text-base hover:text-blue-800"
               href="#"
             >
               Inicio
@@ -68,7 +59,7 @@ const Navbar = () => {
           </li>
           <li className="font-semibold text-xl">
             <a
-              className="text-slate-950 text-base hover:text-sky-400"
+              className="text-slate-950 text-base hover:text-blue-800"
               href="#features"
             >
               Beneficios
@@ -76,7 +67,7 @@ const Navbar = () => {
           </li>
           <li className="font-semibold text-xl">
             <a
-              className="text-slate-950 text-base hover:text-sky-400"
+              className="text-slate-950 text-base hover:text-blue-800"
               href="#price"
             >
               Precios
@@ -84,7 +75,7 @@ const Navbar = () => {
           </li>
           <li className="font-semibold text-xl">
             <a
-              className="text-slate-950 text-base hover:text-sky-400"
+              className="text-slate-950 text-base hover:text-blue-800"
               href="#landing"
             >
               Landing
@@ -92,7 +83,7 @@ const Navbar = () => {
           </li>
           <li className="font-semibold text-xl">
             <a
-              className="text-slate-950 text-base hover:text-sky-400"
+              className="text-slate-950 text-base hover:text-blue-800"
               href="#website"
             >
               Website
@@ -100,7 +91,7 @@ const Navbar = () => {
           </li>
           <li className="font-semibold text-xl">
             <a
-              className="text-slate-950 text-base hover:text-sky-400"
+              className="text-slate-950 text-base hover:text-blue-800"
               href="#contact"
             >
               Contacto

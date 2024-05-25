@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="py-4 px-16 lg:hover:py-8 fixed top-0 z-50 w-full bg-slate-50 dark:bg-slate-900 shadow-sm shadow-slate-800 dark:shadow-slate-600">
+    <nav className="py-6 px-16 lg:hover:py-8 fixed top-0 z-50 w-full bg-slate-50 dark:bg-slate-900 shadow-sm shadow-slate-800 dark:shadow-slate-600">
       <div
         className={`flex gap-4 lg:justify-between lg:px-8 ${
           !isOpen ? "flex-row" : "flex-col"
@@ -86,12 +86,12 @@ const Navbar = () => {
         </button>
         <a
           href="#"
-          className={`flex flex-row-reverse lg:flex-row gap-2 mx-auto items-center lg:mx-0 mt-2 ${
+          className={`flex flex-row gap-2 mx-auto items-center lg:mx-0 mt-2 ${
             !isOpen ? "block" : "hidden"
           }`}
         >
           <svg
-            className="text-black dark:text-white"
+            className="text-black dark:text-white hidden lg:block"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"

@@ -63,7 +63,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div data-aos="zoom-in-up" className="w-full lg:w-fit mx-auto p-8 lg:p-16 mb-64 lg:mb-12 bg-slate-950 dark:bg-slate-100 shadow-md shadow-black rounded-lg">
+    <div data-aos="zoom-in-up" className="w-[380px] lg:w-fit mx-auto p-8 lg:p-16 mb-64 lg:mb-12 bg-slate-950 dark:bg-slate-100 shadow-md shadow-black rounded-lg">
       <form
         onSubmit={sendEmail}
         className="flex flex-col gap-4 md:gap-8"

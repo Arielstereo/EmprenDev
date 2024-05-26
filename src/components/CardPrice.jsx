@@ -20,7 +20,7 @@ const CardPrice = ({
   return (
     <div
       data-aos={animation}
-      className="p-6 md:p-8 z-10 rounded-3xl shadow-lg shadow-black dark:shadow-slate-400 w-full md:w-[450px] md:h-[620px] hover:bg-yellow-100 dark:bg-slate-100 dark:hover:bg-yellow-100"
+      className="p-6 md:p-8 z-10 rounded-3xl shadow-lg shadow-black dark:shadow-slate-400 w-[380px] md:w-[450px] md:h-[620px] hover:bg-yellow-100 dark:bg-slate-100 dark:hover:bg-yellow-100"
     >
       <h3 className="mb-2 text-3xl md:text-4xl text-left">{title}</h3>
       <div className="flex justify-start items-end">

@@ -90,31 +90,7 @@ const Navbar = () => {
             !isOpen ? "block" : "hidden"
           }`}
         >
-          <svg
-            className="text-black dark:text-white hidden lg:block"
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 48 48"
-          >
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-linejoin="round"
-              stroke-width="4"
-            >
-              <path
-                stroke-linecap="round"
-                d="M22 9H11C9.34315 9 8 10.3431 8 12V33H40V22"
-              />
-              <path
-                fill="#2F88FF"
-                d="M4 33H44V35C44 38.3137 41.3137 41 38 41H10C6.68629 41 4 38.3137 4 35V33Z"
-              />
-              <path stroke-linecap="round" d="M33 7L29 11L33 15" />
-              <path stroke-linecap="round" d="M39 7L43 11L39 15" />
-            </g>
-          </svg>
+          <img className="hidden lg:block lg:w-12 lg:h-12" src="/logo2.png" alt="logo" />
           <span className="text-black dark:text-white text-lg font-black">
             EmprenDev
           </span>

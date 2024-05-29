@@ -1,24 +1,38 @@
 ---
-const { title, id, img, url, description } = Astro.props;
+const { title, id, img, img2, url, description } = Astro.props;
 ---
 
 <section
   id={id}
-  class="h-full lg:h-screen py-32 lg:pt-32 flex flex-col-reverse lg:flex-row gap-4 md:gap-12 px-6"
+  class="h-full py-32 lg:pt-32 flex flex-col-reverse lg:flex-row-reverse gap-4 px-6"
 >
   <div class="mt-4 z-10 flex flex-col gap-8">
-    <a href={url} target="_blank">
-      <img
-        class="cursor-pointer rounded-xl hover:animate-pulse w-full object-cover lg:w-[600px] h-[200px] lg:h-[400px]"
-        src={img}
-        alt="landingPage"
-      />
-    </a>
-  <div class="flex flex-col items-center gap-4">
-    <span class="text-sm font-black text-center md:text-lg text-slate-900 dark:text-slate-100">Haz click en la imagen para ver más!</span>
+    <div class="flex">
+      <a href={url} target="_blank">
+        <img
+          class="cursor-pointer rounded-xl hover:animate-pulse w-full object-cover md:w-[700px] md:h-[400px]"
+          src={img}
+          alt="landingPage"
+        />
+      </a>
+      <a href={url} target="_blank">
+        <img
+          class="cursor-pointer rounded-xl hover:animate-pulse w-full object-cover md:w-[120px] md:h-[240px]"
+          src={img2}
+          alt="landingPage"
+        />
+      </a>
+    </div>
+    <div class="flex flex-col items-center gap-4">
+      <span
+        class="text-sm font-black text-center md:text-lg text-slate-900 dark:text-slate-100"
+        >Haz click en la imagen para ver más!</span
+      >
     </div>
   </div>
-  <div class="w-full h-fit lg:w-[600px] bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg pb-16 px-8 relative">
+  <div
+    class="w-full h-fit lg:w-[800px] bg-gradient-to-r from-blue-600 to-blue-800 rounded-lg pb-16 px-8 relative"
+  >
     <h3 class="text-4xl md:text-6xl text-center text-white py-8">
       {title}
     </h3>
@@ -27,11 +41,11 @@ const { title, id, img, url, description } = Astro.props;
     </p>
     <div class="absolute bottom-0 right-1">
       <a
-      class="text-lg text-black rounded-md shadow-lg shadow-black hover:animate-pulse py-4 px-16 bg-white hover:bg-green-600 hover:text-white"
-      href="#contact"
-    >
-      Contactanos
-    </a>
+        class="text-lg text-black rounded-md shadow-lg shadow-black hover:animate-pulse py-4 px-16 bg-white hover:bg-green-600 hover:text-white"
+        href="#contact"
+      >
+        Contactanos
+      </a>
     </div>
   </div>
 </section>

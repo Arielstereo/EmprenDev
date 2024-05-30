@@ -22,7 +22,7 @@ const CardPrice = ({
       data-aos={animation}
       className="p-6 md:p-8 z-10 rounded-3xl shadow-lg shadow-black dark:shadow-slate-200 w-[340px] md:w-[450px] md:h-[620px] bg-gradient-to-r from-blue-800 to-blue-600 hover:from-blue-600 hover:to-blue-800"
     >
-      <h3 className="mb-2 text-3xl md:text-4xl text-left text-sky-200">{title}</h3>
+      <h3 className="mb-2 text-3xl md:text-4xl text-left text-yellow-400">{title}</h3>
       <div className="flex justify-start items-end">
         <div className="text-4xl sm:text-5xl font-bold text-white text-left mt-4 mr-2">
           {price}/

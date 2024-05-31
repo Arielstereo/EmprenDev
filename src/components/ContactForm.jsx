@@ -63,7 +63,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div data-aos="zoom-in-up" className="w-[330px] md:w-[400px] lg:w-fit mx-auto p-8 lg:p-12 mb-64 lg:mb-12 bg-gradient-to-r from-blue-800 to-blue-600 shadow-md shadow-black dark:shadow-white rounded-lg">
+    <div data-aos="zoom-in-up" className="w-[330px] md:w-[400px] lg:w-fit mx-auto mb-64 lg:mb-12 p-4">
       <form
         onSubmit={sendEmail}
         className="flex flex-col gap-4 md:gap-8"
@@ -71,13 +71,13 @@ const ContactForm = () => {
         <div className="flex flex-col gap-4">
           <div>
             <label
-              className="block text-sm text-white font-medium mb-1"
+              className="block text-sm dark:text-white font-medium mb-1"
               htmlFor="username"
             >
               Nombre
             </label>
             <input
-              className="w-full lg:w-96 p-2 rounded-md"
+              className="w-full lg:w-96 p-4 rounded-md border border-slate-600"
               id="username"
               name="username"
               placeholder="Juan Perez"
@@ -88,13 +88,13 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block text-sm font-medium mb-1 text-white"
+              className="block text-sm font-medium mb-1 dark:text-white"
               htmlFor="email"
             >
               Correo Electrónico
             </label>
             <input
-              className="w-full p-2 rounded-md"
+              className="w-full p-4 rounded-md border border-slate-600"
               id="email"
               name="email"
               placeholder="juan@gmail.com"
@@ -106,13 +106,13 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block text-sm font-medium mb-1 text-white" 
+              className="block text-sm font-medium mb-1 dark:text-white" 
               htmlFor="phone"
             >
               Teléfono
             </label>
             <input
-              className="w-full p-2 rounded-md"
+              className="w-full p-4 rounded-md border border-slate-600"
               id="phone"
               name="phone"
               placeholder="1122334455"
@@ -125,13 +125,13 @@ const ContactForm = () => {
         <div className="flex flex-col gap-6">
           <div>
             <label
-              className="block text-sm font-medium mb-1 text-white"
+              className="block text-sm font-medium mb-1 dark:text-white"
               htmlFor="message"
             >
               Mensaje
             </label>
             <textarea
-              className="w-full lg:w-96 rounded-md p-4 h-32"
+              className="w-full lg:w-96 rounded-md p-4 h-32 border border-slate-600"
               id="msg"
               name="msg"
               placeholder="Escribe tu consulta"
@@ -142,7 +142,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-slate-100 hover:bg-slate-800 hover:text-white border-white border-2 p-2 text-black font-semibold rounded-md text-lg"
+            className="w-full bg-blue-800 hover:bg-blue-600 text-white border-slate-800 dark:border-white border-2 p-2 font-semibold rounded-md text-lg"
           >
             Enviar consulta
           </button>

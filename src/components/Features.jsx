@@ -15,9 +15,9 @@ const Features = () => {
       id="features"
       class="flex flex-col lg:flex-row gap-12 md:gap-48 lg:gap-32 lg:justify-center w-3/4 lg:w-full mx-auto pt-16 lg:pt-48 h-full md:h-screen"
     >
-      <div data-aos="zoom-out" class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 bg-gradient-to-r from-blue-800 to-blue-700 rounded-xl shadow-md shadow-black dark:shadow-white">
+      <div data-aos="zoom-out" class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 rounded-xl shadow-md shadow-black dark:shadow-white">
         <div class="flex md:flex-col gap-4">
-          <div class="flex items-center justify-center rounded-full bg-gradient-to-r from-white to-yellow-200 shadow-lg shadow-black p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
+          <div class="flex items-center justify-center rounded-full bg-slate-100 shadow-lg shadow-black dark:shadow-md dark:shadow-white p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="48"
@@ -31,19 +31,19 @@ const Features = () => {
               ></path>
             </svg>
           </div>
-          <h2 class="text-xl md:text-2xl font-semibold md:text-center pt-8 text-yellow-400">
+          <h2 class="text-xl md:text-2xl font-semibold md:text-center pt-8 text-blue-600 dark:text-yellow-400">
             Visibilidad
           </h2>
         </div>
-        <span class="text-sm md:text-base text-white">
+        <span class="text-sm md:text-base text-slate-900 dark:text-white">
           Un sitio web aumenta tu visibilidad y te ayuda a destacarte de la
           competencia. Una página web es una herramienta de marketing
           extremadamente eficaz y más económica que la publicidad tradicional.
         </span>
       </div>
-      <div data-aos="zoom-in" class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 bg-gradient-to-r from-blue-700 to-blue-600 rounded-xl shadow-md shadow-black dark:shadow-white">
+      <div data-aos="zoom-in" class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 rounded-xl shadow-md shadow-black dark:shadow-white">
         <div class="flex md:flex-col gap-4">
-          <div class="flex items-center justify-center rounded-full bg-gradient-to-r from-white to-yellow-200 shadow-lg shadow-black p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
+          <div class="flex items-center justify-center rounded-full bg-slate-100 shadow-lg shadow-black dark:shadow-md dark:shadow-white p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -63,20 +63,20 @@ const Features = () => {
               ></path>
             </svg>
           </div>
-          <h2 class="text-xl md:text-2xl font-semibold md:text-center pt-8 text-yellow-400">
+          <h2 class="text-xl md:text-2xl font-semibold md:text-center pt-8 text-blue-600 dark:text-yellow-400">
             Credibilidad
           </h2>
         </div>
-        <span class="text-sm md:text-base text-white">
+        <span class="text-sm md:text-base text-slate-900 dark:text-white">
           Tener una página web transmite confianza y credibilidad a tus
           clientes. Demuestra que tu negocio está al tanto de las últimas
           tendencias, lo que puede hacer que los clientes confíen más en tus
           productos o servicios.
         </span>
       </div>
-      <div data-aos="zoom-out-up" class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 bg-gradient-to-r from-blue-600 to-blue-500 rounded-xl shadow-md shadow-black dark:shadow-white">
+      <div data-aos="zoom-out-up" class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 rounded-xl shadow-md shadow-black dark:shadow-white">
         <div class="flex md:flex-col gap-4">
-          <div class="flex items-center justify-center rounded-full bg-gradient-to-r from-white to-yellow-200 shadow-lg shadow-black p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
+          <div class="flex items-center justify-center rounded-full bg-slate-100 shadow-lg shadow-black dark:shadow-md dark:shadow-white p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,11 +96,11 @@ const Features = () => {
               </svg>
             </span>
           </div>
-          <h2 class="text-xl md:text-2xl font-semibold md:text-center pt-8 text-yellow-400">
+          <h2 class="text-xl md:text-2xl font-semibold md:text-center pt-8 text-blue-600 dark:text-yellow-400">
             Flexibilidad
           </h2>
         </div>
-        <span class="text-sm md:text-base text-white">
+        <span class="text-sm md:text-base text-slate-900 dark:text-white">
           Una página web es flexible y puede crecer y adaptarse junto con tu
           negocio. Puedes agregar nuevas funciones, actualizar el diseño o
           expandir tu sitio a medida que tu negocio crezca y evolucione.

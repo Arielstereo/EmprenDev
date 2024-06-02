@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="py-6 px-16 lg:hover:py-8 fixed top-0 z-50 w-full bg-slate-50 dark:bg-slate-950 shadow-sm shadow-slate-800 dark:shadow-slate-600">
+    <nav className="py-6 px-16 lg:hover:py-8 fixed top-0 z-50 w-full bg-slate-50 dark:bg-gradient-to-r dark:bg-slate-950 dark:to-slate-800 shadow-sm shadow-slate-800 dark:shadow-slate-600">
       <div
         className={`flex gap-4 lg:justify-between lg:px-8 ${
           !isOpen ? "flex-row" : "flex-col"

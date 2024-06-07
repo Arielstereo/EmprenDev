@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "@components/Hero.astro";
+import Hero from "@components/Hero";
 import Navbar from "@components/Navbar";
 import SectionPrice from "@components/SectionPrice.astro";
 import Proyects from "@components/Proyects.astro";
@@ -15,7 +15,7 @@ import Footer from "@components/Footer.astro";
     class="flex flex-col justify-center items-center bg-transparent dark:bg-gradient-to-r dark:from-slate-950 dark:to-slate-800 w-fit md:w-full"
   >
     <Navbar client:load />
-    <Hero />
+    <Hero client:load />
     <Features />
     <SectionPrice />
     <Proyects

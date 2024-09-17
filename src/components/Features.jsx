@@ -3,7 +3,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Features = () => {
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -13,17 +12,20 @@ const Features = () => {
   return (
     <section
       id="features"
-      class="flex flex-col lg:flex-row gap-12 md:gap-48 lg:gap-32 lg:justify-center w-3/4 lg:w-full mx-auto pt-16 lg:pt-48 h-full md:h-screen"
+      className="flex flex-col lg:flex-row gap-12 md:gap-48 lg:gap-32 lg:justify-center w-3/4 lg:w-full mx-auto pt-16 lg:pt-48 h-full md:h-screen"
     >
-      <div data-aos="zoom-out" class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 rounded-xl shadow-md shadow-black dark:shadow-white">
-        <div class="flex md:flex-col gap-4">
-          <div class="flex items-center justify-center rounded-full bg-slate-100 shadow-lg shadow-black dark:shadow-md dark:shadow-white p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
+      <div
+        data-aos="zoom-out"
+        class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 rounded-xl shadow-md shadow-black dark:shadow-white"
+      >
+        <div className="flex md:flex-col gap-4">
+          <div className="flex items-center justify-center rounded-full bg-slate-100 shadow-lg shadow-black dark:shadow-md dark:shadow-white p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="48"
               height="48"
               viewBox="0 0 24 24"
-              class="absolute"
+              className="absolute"
             >
               <path
                 fill="#333333"
@@ -31,25 +33,28 @@ const Features = () => {
               ></path>
             </svg>
           </div>
-          <h2 class="text-xl md:text-2xl font-semibold md:text-center pt-8 text-blue-600 dark:text-yellow-400">
+          <h2 className="text-xl md:text-2xl font-semibold md:text-center pt-8 text-blue-600 dark:text-yellow-400">
             Visibilidad
           </h2>
         </div>
-        <span class="text-sm md:text-base text-slate-900 dark:text-white">
+        <span className="text-sm md:text-base text-slate-900 dark:text-white">
           Un sitio web aumenta tu visibilidad y te ayuda a destacarte de la
           competencia. Una página web es una herramienta de marketing
           extremadamente eficaz y más económica que la publicidad tradicional.
         </span>
       </div>
-      <div data-aos="zoom-in" class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 rounded-xl shadow-md shadow-black dark:shadow-white">
-        <div class="flex md:flex-col gap-4">
-          <div class="flex items-center justify-center rounded-full bg-slate-100 shadow-lg shadow-black dark:shadow-md dark:shadow-white p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
+      <div
+        data-aos="zoom-in"
+        class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 rounded-xl shadow-md shadow-black dark:shadow-white"
+      >
+        <div className="flex md:flex-col gap-4">
+          <div className="flex items-center justify-center rounded-full bg-slate-100 shadow-lg shadow-black dark:shadow-md dark:shadow-white p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
               height="40"
               viewBox="0 0 24 24"
-              class="absolute"
+              className="absolute"
             >
               <path
                 fill="#333333"
@@ -57,26 +62,29 @@ const Features = () => {
               ></path>
               <path
                 fill="#333333"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M2.968 9.485a.75.75 0 0 1 .78.685l.97 11.236a1.237 1.237 0 1 1-2.468.107V10.234a.75.75 0 0 1 .718-.749"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </div>
-          <h2 class="text-xl md:text-2xl font-semibold md:text-center pt-8 text-blue-600 dark:text-yellow-400">
+          <h2 className="text-xl md:text-2xl font-semibold md:text-center pt-8 text-blue-600 dark:text-yellow-400">
             Credibilidad
           </h2>
         </div>
-        <span class="text-sm md:text-base text-slate-900 dark:text-white">
+        <span className="text-sm md:text-base text-slate-900 dark:text-white">
           Tener una página web transmite confianza y credibilidad a tus
           clientes. Demuestra que tu negocio está al tanto de las últimas
           tendencias, lo que puede hacer que los clientes confíen más en tus
           productos o servicios.
         </span>
       </div>
-      <div data-aos="zoom-out-up" class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 rounded-xl shadow-md shadow-black dark:shadow-white">
-        <div class="flex md:flex-col gap-4">
-          <div class="flex items-center justify-center rounded-full bg-slate-100 shadow-lg shadow-black dark:shadow-md dark:shadow-white p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
+      <div
+        data-aos="zoom-out-up"
+        class="w-full lg:w-[300px] h-fit p-8 flex flex-col gap-4 rounded-xl shadow-md shadow-black dark:shadow-white"
+      >
+        <div className="flex md:flex-col gap-4">
+          <div className="flex items-center justify-center rounded-full bg-slate-100 shadow-lg shadow-black dark:shadow-md dark:shadow-white p-8 lg:p-10 w-12 h-12 md:mx-auto hover:animate-bounce">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,8 +95,8 @@ const Features = () => {
                 <g
                   fill="none"
                   stroke="#333333"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <circle cx="6.5" cy="6.5" r="6"></circle>
                   <path d="m10.74 10.74l2.76 2.76M6.5 4V2.5M5 8c0 .75.67 1 1.5 1S8 9 8 8c0-1.5-3-1.5-3-3c0-1 .67-1 1.5-1S8 4.38 8 5M6.5 9v1.5"></path>
@@ -96,11 +104,11 @@ const Features = () => {
               </svg>
             </span>
           </div>
-          <h2 class="text-xl md:text-2xl font-semibold md:text-center pt-8 text-blue-600 dark:text-yellow-400">
+          <h2 className="text-xl md:text-2xl font-semibold md:text-center pt-8 text-blue-600 dark:text-yellow-400">
             Flexibilidad
           </h2>
         </div>
-        <span class="text-sm md:text-base text-slate-900 dark:text-white">
+        <span className="text-sm md:text-base text-slate-900 dark:text-white">
           Una página web es flexible y puede crecer y adaptarse junto con tu
           negocio. Puedes agregar nuevas funciones, actualizar el diseño o
           expandir tu sitio a medida que tu negocio crezca y evolucione.

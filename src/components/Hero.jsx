@@ -9,7 +9,7 @@ const Hero = () => {
           EmprenDev
         </h1>
         <h2 className="text-lg md:text-2xl text-slate-600 dark:text-slate-300 animate__animated animate__fadeInUp animate__slower">
-          Desarrollo de páginas web para
+          Desarrollo de sitios web para
           <br />
           <span className="text-lg md:text-2xl text-blue-600 dark:text-yellow-300 animate__animated animate__fadeInUp animate__slower">
           <Typewriter

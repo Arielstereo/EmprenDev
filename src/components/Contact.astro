@@ -4,18 +4,12 @@ import ContactForm from "./ContactForm";
 
 <section
   id="contact"
-  class="flex flex-col w-full h-screen justify-center pt-80 pb-12 lg:pb-0 md:pt-64 lg:pt-32"
+  class="flex flex-col w-full h-screen justify-center pt-80 pb-12 lg:pb-0 md:pt-64 lg:pt-16"
 >
-  <div class="flex flex-col lg:flex-row mx-auto gap-8 lg:gap-4 md:gap-16">
-    <div class="flex flex-col gap-4 md:gap-16 w-full lg:w-1/2 items-center">
-      <h4 class="text-center text-4xl md:text-6xl dark:text-white">
-        Asesoramiento sin cargo
-      </h4>
-      <div class="flex lg:flex-col items-center justify-center gap-2">
-        <img class="w-12 h-12 lg:w-32 lg:h-32" src="/logo2.png" alt="logo" />
-        <span class="text-2xl md:text-4xl dark:text-white font-bold">EmprenDev</span>
-      </div>
-    </div>
+  <div class="flex flex-col mx-auto gap-8 lg:gap-4 md:gap-16 mt-32 lg:mt-0">
+    <h2 class="text-center text-2xl md:text-3xl font-bold dark:text-white">
+      Asesoramiento sin cargo
+    </h2>
     <ContactForm client:load />
   </div>
 </section>

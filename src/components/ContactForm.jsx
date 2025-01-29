@@ -63,15 +63,15 @@ const ContactForm = () => {
   };
 
   return (
-    <div data-aos="zoom-in-up" className="w-[330px] md:w-[400px] lg:w-fit mx-auto mb-64 lg:mb-12 p-4">
+    <div data-aos="zoom-in-up" className="w-[325px] md:w-[400px] lg:w-fit mx-auto mb-64 lg:mb-12 p-4">
       <form
         onSubmit={sendEmail}
-        className="flex flex-col gap-4 md:gap-8"
+        className="flex flex-col lg:flex-row gap-4 md:gap-8"
       >
         <div className="flex flex-col gap-4">
           <div>
             <label
-              className="block text-sm dark:text-white font-medium mb-1"
+              className="block md:text-lg dark:text-white font-medium mb-1"
               htmlFor="username"
             >
               Nombre
@@ -88,7 +88,7 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block text-sm font-medium mb-1 dark:text-white"
+              className="block md:text-lg font-medium mb-1 dark:text-white"
               htmlFor="email"
             >
               Correo Electrónico
@@ -106,7 +106,7 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block text-sm font-medium mb-1 dark:text-white" 
+              className="block md:text-lg font-medium mb-1 dark:text-white" 
               htmlFor="phone"
             >
               Teléfono
@@ -122,16 +122,16 @@ const ContactForm = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-5">
           <div>
             <label
-              className="block text-sm font-medium mb-1 dark:text-white"
+              className="block md:text-lg font-medium mb-1 dark:text-white"
               htmlFor="message"
             >
               Mensaje
             </label>
             <textarea
-              className="w-full lg:w-96 rounded-md p-4 h-32 border border-slate-600"
+              className="w-full lg:w-96 rounded-md p-4 h-48 border border-slate-600"
               id="msg"
               name="msg"
               placeholder="Escribe tu consulta"
@@ -142,7 +142,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-800 hover:bg-blue-600 text-white border-slate-800 dark:border-white border-2 p-2 font-semibold rounded-md text-lg"
+            className="rounded-lg bg-indigo-500 px-8 py-3 text-center md:text-lg font-semibold text-white outline-none ring-slate-100 transition duration-100 hover:bg-indigo-600"
           >
             Enviar consulta
           </button>

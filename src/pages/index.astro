@@ -1,39 +1,29 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Hero from "@components/Hero";
-import Navbar from "@components/Navbar";
-import SectionPrice from "@components/SectionPrice.astro";
-import Proyects from "@components/Proyects.astro";
 import WhatsappButton from "@components/WhatsappButton.astro";
+import SectionPrice from "@components/SectionPrice.astro";
 import Contact from "@components/Contact.astro";
-import Features from "@components/Features"
+import Website from "@components/Website.astro";
+import NavMobile from '@components/NavMobile.astro';
+import Events from "@components/Events.astro";
 import Footer from "@components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
+import Features from "@components/Features"
+import Navbar from "@components/Navbar";
+import Hero from "@components/Hero";
+
 ---
 
-<Layout title="EmprenDev | Desarrollo de páginas web">
+<Layout title="EmprenDev | Desarrollo de sitios web">
   <main
-    class="flex flex-col justify-center items-center bg-transparent dark:bg-gradient-to-r dark:from-slate-950 dark:to-slate-800 w-fit md:w-full"
+    class="flex flex-col justify-center items-center bg-transparent dark:bg-gradient-to-b dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 w-fit md:w-full"
   >
     <Navbar client:load />
+    <NavMobile />
     <Hero client:load />
     <Features />
     <SectionPrice />
-    <Proyects
-      id="landing"
-      url="https://mitienda.empren.dev"
-      title="Landing Page"
-      img="./mitienda.png"
-      img2="./mitienda_phone.png"
-      description="Con nuestra web de una sola página, tu emprendimiento obtendrá una presencia profesional en internet que te ayudará a impulsar tus ventas y atraer nuevos clientes de manera efectiva. Puede contener hasta 5 secciones, donde se incluyen imágenes a tu elección, sección para contacto y conexión a tus redes sociales, esto garantiza que tus clientes potenciales puedan conectarse contigo fácilmente y explorar más sobre tu negocio. Compatible con dispositivos móviles, pc, tablets y laptops. Incluye dominio por 1 año. Consulta por otras opciones a tu medida"
-    />
-    <Proyects
-      id="website"
-      url="https://interiordesign.empren.dev"
-      title="Website"
-      img="./interior.png"
-      img2="./interior_phone.png"
-      description="Nuestra web para negocios, diseñada para destacar tus productos o servicios de manera profesional y atractiva, es una solución integral que te proporciona todas las herramientas que necesitas para impulsar tu negocio en línea. Con un menú interactivo que permite una navegación fluida entre las distintas páginas. Destaca tus ofertas y promociones con una sección dedicada en tu sitio web, lo que te permite captar la atención de tus clientes potenciales y fomentar las ventas. Al integrar y conectar tus redes sociales, podrás ampliar tu alcance y llegar a más clientes a través de plataformas como Facebook, Instagram, Twitter y más. Diseño para pc, laptop, tablets y celulares. Incluye dominio por 1 año. Consulta por otras opciones a tu medida"
-    />
+    <Events />
+    <Website />
     <WhatsappButton />
     <Contact />
     <Footer />

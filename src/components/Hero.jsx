@@ -3,9 +3,9 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
-    <header className="flex justify-center h-screen lg:flex-row mt-64 lg:mt-48">
+    <header className="flex justify-center h-screen lg:flex-row mt-64 md:mt-48">
       <div className="flex flex-col gap-8 text-center">
-        <h1 className="text-6xl xl:text-8xl text-slate-800 dark:text-slate-100 animate__animated animate__bounceInLeft animate__slow">
+        <h1 className="text-6xl md:text-8xl text-slate-800 dark:text-slate-100 animate__animated animate__bounceInLeft animate__slow">
           EmprenDev
         </h1>
         <h2 className="text-lg md:text-2xl text-slate-600 dark:text-slate-300 animate__animated animate__fadeInUp animate__slower">

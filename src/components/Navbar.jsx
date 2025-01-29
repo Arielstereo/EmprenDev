@@ -39,7 +39,7 @@ const Navbar = () => {
           className="flex flex-row gap-2 mx-0 items-center mt-1"
         >
           <span className="icon-[fa-solid--code] text-2xl dark:text-white  hover:text-indigo-600 dark:hover:text-indigo-300  animate-pulse" role="img" aria-hidden="true"></span>
-          <span className="text-black dark:text-white  hover:text-indigo-600 dark:hover:text-indigo-300  text-lg font-black">
+          <span className="text-black dark:text-white  hover:text-indigo-600 dark:hover:text-indigo-300 text-lg font-semibold">
             EmprenDev
           </span>
         </a>

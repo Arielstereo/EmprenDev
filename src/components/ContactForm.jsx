@@ -74,6 +74,7 @@ const ContactForm = () => {
               className="block md:text-lg dark:text-white font-medium mb-1"
               htmlFor="username"
             >
+              <span class="icon-[fa6-solid--user] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
               Nombre
             </label>
             <input
@@ -91,6 +92,7 @@ const ContactForm = () => {
               className="block md:text-lg font-medium mb-1 dark:text-white"
               htmlFor="email"
             >
+              <span class="icon-[entypo--email] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
               Correo Electrónico
             </label>
             <input
@@ -109,6 +111,7 @@ const ContactForm = () => {
               className="block md:text-lg font-medium mb-1 dark:text-white" 
               htmlFor="phone"
             >
+              <span class="icon-[oi--phone] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
               Teléfono
             </label>
             <input
@@ -128,6 +131,7 @@ const ContactForm = () => {
               className="block md:text-lg font-medium mb-1 dark:text-white"
               htmlFor="message"
             >
+              <span class="icon-[mynaui--message] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
               Mensaje
             </label>
             <textarea
@@ -142,7 +146,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="rounded-lg bg-indigo-500 px-8 py-3 text-center md:text-lg font-semibold text-white outline-none ring-slate-100 transition duration-100 hover:bg-indigo-600"
+            className="rounded-lg bg-indigo-500 px-8 py-3 mt-2 text-center md:text-lg font-semibold text-white outline-none ring-slate-100 transition duration-100 hover:bg-indigo-600"
           >
             Enviar consulta
           </button>

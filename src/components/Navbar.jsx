@@ -32,7 +32,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="hidden xl:block py-6 px-16 top-0 w-full bg-transparent">
+    <nav className="hidden lg:block py-6 px-16 top-0 w-full bg-transparent">
       <div className="flex gap-4 justify-between px-8">
         <a
           href="#"
@@ -85,7 +85,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <button onClick={toggleTheme}>
+            <button onClick={toggleTheme} aria-label="dark mode button">
               {isDarkMode ? (
                 <span class="icon-[line-md--sun-rising-filled-loop] text-3xl text-slate-100 mt-2" role="img" aria-hidden="true"></span>
               ) : (

@@ -29,7 +29,7 @@ const Features = () => {
             className="relative rounded-lg bg-gray-100 p-5 pt-8"
           >
             <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500 text-white">
-              <span class="icon-[hugeicons--question] text-3xl"></span>
+              <span className="icon-[hugeicons--question] text-3xl"></span>
             </span>
 
             <h3 className="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">
@@ -49,7 +49,7 @@ const Features = () => {
             className="relative rounded-lg bg-gray-100 p-5 pt-8"
           >
             <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500 text-white">
-              <span class="icon-[hugeicons--question] text-3xl"></span>
+              <span className="icon-[hugeicons--question] text-3xl"></span>
             </span>
 
             <h3 className="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">
@@ -68,7 +68,7 @@ const Features = () => {
             className="relative rounded-lg bg-gray-100 p-5 pt-8"
           >
             <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500 text-white">
-              <span class="icon-[hugeicons--question]  text-3xl" role="img" aria-hidden="true"></span>
+              <span className="icon-[hugeicons--question]  text-3xl" role="img" aria-hidden="true"></span>
             </span>
 
             <h3 className="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">

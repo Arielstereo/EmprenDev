@@ -21,7 +21,7 @@ const Features = () => {
           <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 dark:text-slate-50 md:mb-6 lg:text-3xl">
             Preguntas frecuentes
           </h2>
-          <img src="./logo_png.webp" class="hidden md:flex h-16 w-16 rounded-full mb-6" alt="logo" />
+          <img src="./logo_png.webp" className="hidden md:flex h-16 w-16 rounded-full mb-6" alt="logo" />
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-2">

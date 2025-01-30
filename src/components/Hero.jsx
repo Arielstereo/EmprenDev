@@ -3,11 +3,18 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
-    <header className="flex justify-center h-screen lg:flex-row mt-64 md:mt-48">
-      <div className="flex flex-col gap-8 text-center">
-        <h1 className="text-6xl md:text-8xl text-slate-800 dark:text-slate-100 animate__animated animate__bounceInLeft animate__slow">
-          EmprenDev
-        </h1>
+    <header className="flex justify-center h-screen lg:flex-row mt-64 lg:mt-32">
+      <div className="flex flex-col gap-2 text-center mx-auto">
+        <div className="flex justify-center items-center ml-0 lg:ml-32 animate__animated animate__bounceInLeft animate__slow">
+          <h1 className="text-6xl md:text-8xl text-slate-800 dark:text-slate-100 ">
+            EmprenDev
+          </h1>
+          <img
+            className="hidden lg:flex h-48 w-48"
+            src="./logo_png.webp"
+            alt="logo EmprenDev"
+          />
+        </div>
         <h2 className="text-lg md:text-2xl text-slate-600 dark:text-slate-300 animate__animated animate__fadeInUp animate__slower">
           Desarrollo de sitios web para
           <br />
@@ -29,7 +36,7 @@ const Hero = () => {
             />
           </span>
         </h2>
-        <div class="flex w-fit gap-4 mx-auto">
+        <div class="flex w-fit gap-4 mx-auto mt-8">
           <a
             className="rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
             href="#price"

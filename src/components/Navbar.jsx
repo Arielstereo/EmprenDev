@@ -87,9 +87,9 @@ const Navbar = () => {
           <li>
             <button onClick={toggleTheme} aria-label="dark mode button">
               {isDarkMode ? (
-                <span class="icon-[line-md--sun-rising-filled-loop] text-3xl text-slate-100 mt-2" role="img" aria-hidden="true"></span>
+                <span className="icon-[line-md--sun-rising-filled-loop] text-3xl text-slate-100 mt-2" role="img" aria-hidden="true"></span>
               ) : (
-                <span class="icon-[line-md--moon-filled-loop] text-3xl text-slate-500 mt-2" role="img" aria-hidden="true"></span>
+                <span className="icon-[line-md--moon-filled-loop] text-3xl text-slate-500 mt-2" role="img" aria-hidden="true"></span>
               )}
             </button>
           </li>

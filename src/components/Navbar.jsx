@@ -36,9 +36,9 @@ const Navbar = () => {
       <div className="flex gap-4 justify-between px-8">
         <a
           href="#"
-          className="flex flex-row gap-2 mx-0 items-center mt-1"
+          className="flex flex-row mx-0 items-center mt-1"
         >
-          <span className="icon-[fa-solid--code] text-2xl dark:text-white  hover:text-indigo-600 dark:hover:text-indigo-300  animate-pulse" role="img" aria-hidden="true"></span>
+          <img src="./logo_png.webp" className="w-16 h-16 rounded-full" alt="logo EmprenDev" />
           <span className="text-black dark:text-white  hover:text-indigo-600 dark:hover:text-indigo-300 text-lg font-semibold">
             EmprenDev
           </span>

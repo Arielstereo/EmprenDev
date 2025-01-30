@@ -17,10 +17,11 @@ const Features = () => {
       className="py-32 sm:py-8 lg:py-12 lg:h-screen lg:scroll-mt-48"
     >
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <div className="mb-16 md:mb-32">
+        <div className="flex gap-2 justify-center items-center mb-16">
           <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 dark:text-slate-50 md:mb-6 lg:text-3xl">
             Preguntas frecuentes
           </h2>
+          <img src="./logo_png.webp" class="hidden md:flex h-16 w-16 rounded-full mb-6" alt="logo" />
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-2">

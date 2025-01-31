@@ -74,7 +74,7 @@ const ContactForm = () => {
               className="block md:text-lg dark:text-white font-medium mb-1"
               htmlFor="username"
             >
-              <span class="icon-[fa6-solid--user] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
+              <span className="icon-[fa6-solid--user] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
               Nombre
             </label>
             <input
@@ -92,7 +92,7 @@ const ContactForm = () => {
               className="block md:text-lg font-medium mb-1 dark:text-white"
               htmlFor="email"
             >
-              <span class="icon-[entypo--email] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
+              <span className="icon-[entypo--email] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
               Correo Electrónico
             </label>
             <input
@@ -131,7 +131,7 @@ const ContactForm = () => {
               className="block md:text-lg font-medium mb-1 dark:text-white"
               htmlFor="message"
             >
-              <span class="icon-[mynaui--message] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
+              <span className="icon-[mynaui--message] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
               Mensaje
             </label>
             <textarea

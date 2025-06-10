@@ -21,7 +21,11 @@ const Features = () => {
           <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 dark:text-slate-50 md:mb-6 lg:text-3xl">
             Preguntas frecuentes
           </h2>
-          <img src="./logo_png.webp" className="hidden md:flex h-16 w-16 rounded-full mb-6" alt="logo" />
+          <img
+            src="./logo_png.webp"
+            className="hidden md:flex h-16 w-16 rounded-full mb-6"
+            alt="logo"
+          />
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-2">
@@ -29,19 +33,19 @@ const Features = () => {
             data-aos="zoom-in-down"
             className="relative rounded-lg bg-gray-100 p-5 pt-8"
           >
-            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500 text-white">
+            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
               <span className="icon-[hugeicons--question] text-3xl"></span>
             </span>
 
-            <h3 className="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">
-              ¿Qué servicios ofrecen para mi evento?
+            <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
+              ¿Qué servicios ofrecen para mi emprendimiento?
             </h3>
             <p className="text-gray-500">
               Ofrecemos diseño y desarrollo de páginas web personalizadas para
-              todo tipo de eventos, como bodas, cumpleaños y aniversarios. Las
-              páginas incluyen detalles como la información del evento, mapas
-              interactivos, confirmación de asistencia (RSVP), galerías de fotos
-              y mucho más.
+              todo tipo de emprendimientos: tiendas, peluquerías, barberías,
+              cervecerías, gimnasios, deco, etc. Soluciones para tu presencia en
+              línea, adaptadas a tus necesidades y presupuesto. El menú digital
+              también es una opción ideal para restaurantes y bares.
             </p>
           </div>
 
@@ -49,11 +53,11 @@ const Features = () => {
             data-aos="zoom-in-up"
             className="relative rounded-lg bg-gray-100 p-5 pt-8"
           >
-            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500 text-white">
+            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
               <span className="icon-[hugeicons--question] text-3xl"></span>
             </span>
 
-            <h3 className="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">
+            <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
               ¿Por qué mi negocio necesita una página web?
             </h3>
             <p className="text-gray-500">
@@ -68,17 +72,22 @@ const Features = () => {
             data-aos="zoom-in"
             className="relative rounded-lg bg-gray-100 p-5 pt-8"
           >
-            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500 text-white">
-              <span className="icon-[hugeicons--question]  text-3xl" role="img" aria-hidden="true"></span>
+            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
+              <span
+                className="icon-[hugeicons--question]  text-3xl"
+                role="img"
+                aria-hidden="true"
+              ></span>
             </span>
 
-            <h3 className="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">
+            <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
               ¿Puedo personalizar mi página web?
             </h3>
             <p className="text-gray-500">
               ¡Por supuesto! Trabajamos contigo para personalizar cada aspecto
               de tu página. Desde el diseño y los colores hasta las secciones y
-              el contenido, nos aseguramos de que refleje tu estilo y tus necesidades.
+              el contenido, nos aseguramos de que refleje tu estilo y tus
+              necesidades.
             </p>
           </div>
 
@@ -86,18 +95,18 @@ const Features = () => {
             data-aos="fade-up"
             className="relative rounded-lg bg-gray-100 p-5 pt-8"
           >
-            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500 text-white">
+            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
               <span className="icon-[hugeicons--question] text-3xl"></span>
             </span>
 
-            <h3 className="mb-3 text-lg font-semibold text-indigo-500 md:text-xl">
+            <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
               ¿Qué incluye el costo del servicio?
             </h3>
             <p className="text-gray-500">
-              Nuestros planes incluyen diseño, desarrollo, integración de
-              funcionalidades (como formularios de contacto) y optimización para
-              dispositivos móviles. Ofrecemos soporte técnico y mantenimiento
-              para asegurarnos de que tu página funcione correctamente.
+              Nuestros planes incluyen diseño, desarrollo, optimización para
+              dispositivos móviles, dominio y hosting. Ofrecemos soporte técnico
+              y mantenimiento para asegurarnos de que tu página funcione
+              correctamente.
             </p>
           </div>
         </div>

@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="flex gap-4 justify-between px-8">
         <a
           href="#"
-          className="flex flex-row mx-0 items-center mt-1 focus-visible:outline-indigo-500"
+          className="flex flex-row mx-0 items-center mt-1 focus-visible:outline-blue-500"
           aria-label="Ir al inicio de EmprenDev"
         >
           <img
@@ -44,14 +44,14 @@ const Navbar = () => {
             className="w-16 h-16 rounded-full"
             alt="logo EmprenDev"
           />
-          <span className="text-black dark:text-white hover:text-indigo-600 dark:hover:text-indigo-300 text-lg font-semibold">
+          <span className="text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-300 text-lg font-semibold">
             EmprenDev
           </span>
         </a>
         <ul className="flex items-center gap-16">
           <li className="font-semibold text-xl">
             <a
-              className="text-slate-950 dark:text-white text-base hover:text-indigo-600 dark:hover:text-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-500"
+              className="text-slate-950 dark:text-white text-base hover:text-blue-600 dark:hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500"
               href="#features"
               aria-label="Ir a la sección de preguntas frecuentes"
             >
@@ -60,7 +60,7 @@ const Navbar = () => {
           </li>
           <li className="font-semibold text-xl">
             <a
-              className="text-slate-950 dark:text-white text-base hover:text-indigo-600 dark:hover:text-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-500"
+              className="text-slate-950 dark:text-white text-base hover:text-blue-600 dark:hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500"
               href="#price"
               aria-label="Ir a la sección de precios"
             >
@@ -69,16 +69,16 @@ const Navbar = () => {
           </li>
           <li className="font-semibold text-xl">
             <a
-              className="text-slate-950 dark:text-white text-base hover:text-indigo-600 dark:hover:text-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-500"
-              href="#events"
+              className="text-slate-950 dark:text-white text-base hover:text-blue-600 dark:hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500"
+              href="#menu"
               aria-label="Ir a la sección de eventos"
             >
-              Eventos
+              Menu digital
             </a>
           </li>
           <li className="font-semibold text-xl">
             <a
-              className="text-slate-950 dark:text-white text-base hover:text-indigo-600 dark:hover:text-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-500"
+              className="text-slate-950 dark:text-white text-base hover:text-blue-600 dark:hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500"
               href="#web"
               aria-label="Ir a la sección de emprendedores"
             >
@@ -87,7 +87,7 @@ const Navbar = () => {
           </li>
           <li className="font-semibold text-xl">
             <a
-              className="text-slate-950 dark:text-white text-base hover:text-indigo-600 dark:hover:text-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-500"
+              className="text-slate-950 dark:text-white text-base hover:text-blue-600 dark:hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500"
               href="#contact"
               aria-label="Ir a la sección de contacto"
             >
@@ -100,7 +100,7 @@ const Navbar = () => {
               aria-label={
                 isDarkMode ? "Cambiar a modo claro" : "Cambiar a modo oscuro"
               }
-              className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-500"
+              className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500"
             >
               {isDarkMode ? (
                 <span

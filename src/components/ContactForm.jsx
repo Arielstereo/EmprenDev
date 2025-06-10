@@ -2,15 +2,14 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const ContactForm = () => {
-
   useEffect(() => {
     AOS.init({
-      duration: 1000
+      duration: 1000,
     });
   }, []);
 
@@ -25,9 +24,14 @@ const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(import.meta.env.PUBLIC_SERVICE, import.meta.env.PUBLIC_TEMPLATE, e.target, {
-        publicKey: import.meta.env.PUBLIC_KEY,
-      })
+      .sendForm(
+        import.meta.env.PUBLIC_SERVICE,
+        import.meta.env.PUBLIC_TEMPLATE,
+        e.target,
+        {
+          publicKey: import.meta.env.PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           console.log("SUCCESS!");
@@ -63,7 +67,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div data-aos="zoom-in-up" className="w-[325px] md:w-[400px] lg:w-fit mx-auto mb-64 lg:mb-12 p-4">
+    <div
+      data-aos="zoom-in-up"
+      className="w-[325px] md:w-[400px] lg:w-fit mx-auto mb-64 lg:mb-12 p-4"
+    >
       <form
         onSubmit={sendEmail}
         className="flex flex-col lg:flex-row gap-4 md:gap-8"
@@ -74,7 +81,11 @@ const ContactForm = () => {
               className="block md:text-lg dark:text-white font-medium mb-1"
               htmlFor="username"
             >
-              <span className="icon-[fa6-solid--user] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
+              <span
+                className="icon-[fa6-solid--user] mx-2 h-6 w-6"
+                role="img"
+                aria-hidden="true"
+              ></span>
               Nombre
             </label>
             <input
@@ -92,7 +103,11 @@ const ContactForm = () => {
               className="block md:text-lg font-medium mb-1 dark:text-white"
               htmlFor="email"
             >
-              <span className="icon-[entypo--email] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
+              <span
+                className="icon-[entypo--email] mx-2 h-6 w-6"
+                role="img"
+                aria-hidden="true"
+              ></span>
               Correo Electrónico
             </label>
             <input
@@ -108,10 +123,14 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 dark:text-white" 
+              className="block md:text-lg font-medium mb-1 dark:text-white"
               htmlFor="phone"
             >
-              <span class="icon-[oi--phone] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
+              <span
+                className="icon-[oi--phone] mx-2 h-6 w-6"
+                role="img"
+                aria-hidden="true"
+              ></span>
               Teléfono
             </label>
             <input
@@ -131,7 +150,11 @@ const ContactForm = () => {
               className="block md:text-lg font-medium mb-1 dark:text-white"
               htmlFor="message"
             >
-              <span className="icon-[mynaui--message] mx-2 h-6 w-6" role="img" aria-hidden="true"></span>
+              <span
+                className="icon-[mynaui--message] mx-2 h-6 w-6"
+                role="img"
+                aria-hidden="true"
+              ></span>
               Mensaje
             </label>
             <textarea
@@ -146,7 +169,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="rounded-lg bg-indigo-500 px-8 py-3 mt-2 text-center md:text-lg font-semibold text-white outline-none ring-slate-100 transition duration-100 hover:bg-indigo-600"
+            className="rounded-lg bg-blue-500 px-8 py-3 mt-2 text-center md:text-lg font-semibold text-white outline-none ring-slate-100 transition duration-100 hover:bg-blue-600"
           >
             Enviar consulta
           </button>

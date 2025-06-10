@@ -16,17 +16,11 @@ const Hero = () => {
           />
         </div>
         <h2 className="text-lg md:text-2xl text-slate-600 dark:text-slate-300 animate__animated animate__fadeInUp animate__slower">
-          Desarrollo de sitios web para
+          Desarrollo de sitios web y soluciones para:
           <br />
-          <span className="text-lg md:text-2xl text-indigo-600 dark:text-indigo-300 animate__animated animate__fadeInUp animate__slower">
+          <span className="text-lg md:text-2xl text-blue-600 dark:text-blue-300 animate__animated animate__fadeInUp animate__slower">
             <Typewriter
-              words={[
-                "Emprendedores",
-                "Pymes",
-                "Eventos",
-                "Tu fiesta",
-                "Cumplir tus sueños...",
-              ]}
+              words={["Emprendedores", "Pymes", "Negocios", "Tus proyectos!"]}
               loop={10}
               cursor
               cursorStyle="|"
@@ -38,7 +32,7 @@ const Hero = () => {
         </h2>
         <div className="flex w-fit gap-4 mx-auto mt-8">
           <a
-            className="rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
+            className="rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-300 transition duration-100 hover:bg-blue-400 focus-visible:ring active:bg-blue-700 md:text-base"
             role="button"
             href="#price"
             aria-label="Ir a la sección de precios y comenzar tu sitio web"
@@ -48,7 +42,7 @@ const Hero = () => {
           <a
             role="button"
             href="#contact"
-            className="inline-block rounded-lg bg-gray-800 dark:bg-gray-100 px-8 py-3 text-center text-sm font-semibold text-gray-100 dark:text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-700 hover:dark:bg-gray-400 focus-visible:ring md:text-base"
+            className="inline-block rounded-lg bg-gray-800 dark:bg-gray-100 px-8 py-3 text-center text-sm font-semibold text-gray-100 dark:text-gray-800 outline-none ring-blue-300 transition duration-100 hover:bg-gray-700 hover:dark:bg-gray-400 focus-visible:ring md:text-base"
             aria-label="Ir a la sección de contacto"
           >
             Contacto

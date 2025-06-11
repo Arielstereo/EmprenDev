@@ -78,7 +78,7 @@ const ContactForm = () => {
         <div className="flex flex-col gap-4">
           <div>
             <label
-              className="block md:text-lg dark:text-white font-medium mb-1"
+              className="block md:text-lg bold text-slate-100 dark:text-slate-800 font-medium mb-1"
               htmlFor="username"
             >
               <span
@@ -100,7 +100,7 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 dark:text-white"
+              className="block md:text-lg font-medium mb-1 bold text-slate-100 dark:text-slate-800"
               htmlFor="email"
             >
               <span
@@ -123,7 +123,7 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 dark:text-white"
+              className="block md:text-lg font-medium mb-1 bold text-slate-100 dark:text-slate-800"
               htmlFor="phone"
             >
               <span
@@ -147,7 +147,7 @@ const ContactForm = () => {
         <div className="flex flex-col gap-5">
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 dark:text-white"
+              className="block md:text-lg font-medium mb-1 bold text-slate-100 dark:text-slate-800"
               htmlFor="message"
             >
               <span
@@ -169,7 +169,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="rounded-lg bg-blue-500 px-8 py-3 mt-2 text-center md:text-lg font-semibold text-white outline-none ring-slate-100 transition duration-100 hover:bg-blue-600"
+            className="rounded-lg bg-blue-500 px-8 py-3 mt-2 text-center md:text-lg font-semibold text-slate-100 outline-none ring-slate-100 transition duration-100 hover:bg-blue-600"
           >
             Enviar consulta
           </button>

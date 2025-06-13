@@ -30,7 +30,7 @@ const PortfolioItem = ({ item }) => (
           className="w-full transition scale-95 group-hover:scale-125 duration-500"
         />
       </div>
-      <div className="relative -top-16 px-8 z-[1] text-left">
+      <div className="relative -top-10 px-8 z-[1] text-left">
         <h3
           className={`text-3xl md:text-4xl leading-none font-bold uppercase p-1 ${item.color}`}
         >

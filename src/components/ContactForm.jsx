@@ -67,10 +67,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div
-      data-aos="zoom-in-up"
-      className="w-[325px] md:w-[400px] lg:w-fit mx-auto mb-64 lg:mb-12 p-4"
-    >
+    <div data-aos="zoom-in-up" className="w-full mx-auto mb-12 p-4">
       <form
         onSubmit={sendEmail}
         className="flex flex-col lg:flex-row gap-4 md:gap-8"
@@ -78,7 +75,7 @@ const ContactForm = () => {
         <div className="flex flex-col gap-4">
           <div>
             <label
-              className="block md:text-lg bold text-slate-100 dark:text-slate-800 font-medium mb-1"
+              className="block md:text-lg bold text-slate-100 font-medium mb-1"
               htmlFor="username"
             >
               <span
@@ -89,7 +86,7 @@ const ContactForm = () => {
               Nombre
             </label>
             <input
-              className="w-full lg:w-96 p-4 rounded-md border border-slate-600"
+              className="min-h-[48px] leading-[48px] bg-[#3A384D] dark:bg-[#1B2635] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
               id="username"
               name="username"
               placeholder="Juan Perez"
@@ -100,7 +97,7 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 bold text-slate-100 dark:text-slate-800"
+              className="block md:text-lg font-medium mb-1 bold text-slate-100"
               htmlFor="email"
             >
               <span
@@ -111,7 +108,7 @@ const ContactForm = () => {
               Correo Electrónico
             </label>
             <input
-              className="w-full p-4 rounded-md border border-slate-600"
+              className="min-h-[48px] leading-[48px] bg-[#3A384D] dark:bg-[#1B2635] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
               id="email"
               name="email"
               placeholder="juan@gmail.com"
@@ -123,7 +120,7 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 bold text-slate-100 dark:text-slate-800"
+              className="block md:text-lg font-medium mb-1 bold text-slate-100"
               htmlFor="phone"
             >
               <span
@@ -134,7 +131,7 @@ const ContactForm = () => {
               Teléfono
             </label>
             <input
-              className="w-full p-4 rounded-md border border-slate-600"
+              className="min-h-[48px] leading-[48px] bg-[#3A384D] dark:bg-[#1B2635] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
               id="phone"
               name="phone"
               placeholder="1122334455"
@@ -147,7 +144,7 @@ const ContactForm = () => {
         <div className="flex flex-col gap-5">
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 bold text-slate-100 dark:text-slate-800"
+              className="block md:text-lg font-medium mb-1 bold text-slate-100 md:w-96"
               htmlFor="message"
             >
               <span
@@ -158,18 +155,19 @@ const ContactForm = () => {
               Mensaje
             </label>
             <textarea
-              className="w-full lg:w-96 rounded-md p-4 h-48 border border-slate-600"
+              className="min-h-[48px] leading-[48px] bg-[#3A384D] dark:bg-[#1B2635] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full px-5"
               id="msg"
               name="msg"
               placeholder="Escribe tu consulta"
               value={formData.msg}
               onChange={handleChange}
               required
+              rows={4}
             />
           </div>
           <button
             type="submit"
-            className="rounded-lg bg-blue-500 px-8 py-3 mt-2 text-center md:text-lg font-semibold text-slate-100 outline-none ring-slate-100 transition duration-100 hover:bg-blue-600"
+            className="rounded-lg bg-slate-100 px-8 py-3 mt-2 text-center font-semibold text-slate-900 outline-none ring-slate-100 transition duration-100 hover:bg-slate-300"
           >
             Enviar consulta
           </button>

@@ -2,23 +2,22 @@
 import ContactForm from "./ContactForm";
 ---
 
-<section
-  id="contact"
-  class="flex flex-col w-full h-full justify-center pb-12 lg:pb-0 md:pt-64 lg:pt-16 bg-slate-900 dark:bg-slate-50 border-t border-slate-200 dark:border-slate-700"
->
-  <div class="flex flex-col mx-auto gap-8 lg:gap-4 md:gap-16 mt-32 lg:mt-0">
-    <div class="flex gap-2 items-center justify-center">
-      <h2
-        class="text-center text-2xl md:text-3xl font-bold dark:text-slate-800 text-slate-100"
-      >
-        Asesoramiento sin cargo
-      </h2>
-      <img
-        src="./logo_png.webp"
-        class="hidden md:flex h-16 w-16 rounded-full"
-        alt="logo"
-      />
+<section id="contact" class="w-full py-10 md:py-14 text-white bg-blue-800">
+  <div class="container flex flex-col items-center justify-center px-4 mx-auto">
+    <div class="py-12">
+      <div class="px-6">
+        <div class="relative rounded my-12 py-6">
+          <div class="mb-12">
+            <h2 class="text-3xl leading-none font-bold md:text-[45px] mb-4">
+              Consultanos
+            </h2>
+            <p class="text-lg mb-0">
+              Te ayudamos a llevar tu negocio al siguiente nivel.
+            </p>
+          </div>
+          <ContactForm client:load />
+        </div>
+      </div>
     </div>
-    <ContactForm client:load />
   </div>
 </section>

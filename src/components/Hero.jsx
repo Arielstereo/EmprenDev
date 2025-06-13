@@ -1,10 +1,14 @@
 import "animate.css";
 import { Typewriter } from "react-simple-typewriter";
+import ModeButton from "./ModeButton";
+import Logo from "./Logo";
 
 const Hero = () => {
   return (
-    <header className="flex justify-center h-screen lg:flex-row mt-64 lg:mt-32">
-      <div className="flex flex-col gap-2 text-center mx-auto">
+    <header className="flex justify-center h-full lg:flex-row mt-64 lg:mt-32 pb-40">
+      <Logo />
+      <ModeButton />
+      <div className="flex flex-col md:mt-12 gap-2 text-center mx-auto">
         <div className="flex justify-center items-center ml-0 lg:ml-32 animate__animated animate__bounceInLeft animate__slow">
           <h1 className="text-6xl md:text-8xl text-slate-800 dark:text-slate-100 ">
             EmprenDev
@@ -15,12 +19,17 @@ const Hero = () => {
             alt="logo EmprenDev"
           />
         </div>
-        <h2 className="text-lg md:text-2xl text-slate-600 dark:text-slate-300 animate__animated animate__fadeInUp animate__slower">
-          Desarrollo de sitios web y soluciones para:
+        <h2 className="text-xl md:text-3xl text-slate-600 dark:text-slate-300 animate__animated animate__fadeInUp animate__slower">
+          Impulsa tu negocio con soluciones digitales para:
           <br />
-          <span className="text-lg md:text-2xl text-blue-600 dark:text-blue-300 animate__animated animate__fadeInUp animate__slower">
+          <span className="text-xl md:text-2xl text-blue-600 font-bold dark:text-blue-300 animate__animated animate__fadeInUp animate__slower">
             <Typewriter
-              words={["Emprendedores", "Pymes", "Negocios", "Tus proyectos!"]}
+              words={[
+                "Emprendedores",
+                "Pymes",
+                "Negocios",
+                "Tu próximo proyecto!",
+              ]}
               loop={10}
               cursor
               cursorStyle="|"
@@ -30,22 +39,14 @@ const Hero = () => {
             />
           </span>
         </h2>
-        <div className="flex w-fit gap-4 mx-auto mt-8">
+        <div className="w-full mx-auto mt-8">
           <a
-            className="rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-300 transition duration-100 hover:bg-blue-400 focus-visible:ring active:bg-blue-700 md:text-base"
+            className="inline-block rounded-lg bg-gray-800 dark:bg-gray-100 px-8 py-3 text-center text-sm font-semibold text-gray-100 dark:text-gray-800 outline-none ring-blue-300 transition-transform duration-200 hover:bg-transparent hover:border-black hover:text-black hover:scale-110 hover:dark:bg-transparent dark:hover:border-white border-2 dark:hover:text-white focus-visible:ring md:text-base"
             role="button"
-            href="#price"
+            href="/home"
             aria-label="Ir a la sección de precios y comenzar tu sitio web"
           >
-            Comenzar
-          </a>
-          <a
-            role="button"
-            href="#contact"
-            className="inline-block rounded-lg bg-gray-800 dark:bg-gray-100 px-8 py-3 text-center text-sm font-semibold text-gray-100 dark:text-gray-800 outline-none ring-blue-300 transition duration-100 hover:bg-gray-700 hover:dark:bg-gray-400 focus-visible:ring md:text-base"
-            aria-label="Ir a la sección de contacto"
-          >
-            Contacto
+            ¡Quiero mi web!
           </a>
         </div>
       </div>

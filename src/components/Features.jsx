@@ -18,7 +18,7 @@ const Features = () => {
           </h2>
           <img
             src="./logo_png.webp"
-            className="hidden md:flex h-16 w-16 rounded-full mb-6"
+            className="flex h-16 w-16 rounded-full mb-6"
             alt="logo"
           />
         </div>

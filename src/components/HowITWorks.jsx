@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const HowItWorks = () => {
   return (
     <section className="py-14 md:py-24 text-zinc-900 dark:text-white">
@@ -12,7 +15,10 @@ const HowItWorks = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12">
-          <div className="bg-white shadow-xl dark:bg-slate-800 rounded-2xl h-full">
+          <div
+            data-aos="zoom-in-down"
+            className="bg-white shadow-xl dark:bg-slate-800 rounded-2xl h-full"
+          >
             <div className="p-6 lg:p-12">
               <div className="w-16 h-16 text-[22px] rounded-full animate-pulse border border-gray-100 shadow-xl flex items-center justify-center mb-6">
                 <i
@@ -28,7 +34,10 @@ const HowItWorks = () => {
               </p>
             </div>
           </div>
-          <div className="bg-white shadow-xl dark:bg-slate-800 rounded-2xl h-full">
+          <div
+            data-aos="zoom-in-up"
+            className="bg-white shadow-xl dark:bg-slate-800 rounded-2xl h-full"
+          >
             <div className="p-6 lg:p-12">
               <div className="w-16 h-16 text-[22px] rounded-full animate-pulse border border-gray-100 shadow-xl flex items-center justify-center mb-6">
                 <i
@@ -44,7 +53,10 @@ const HowItWorks = () => {
               </p>
             </div>
           </div>
-          <div className="bg-white shadow-xl dark:bg-slate-800 rounded-2xl h-full">
+          <div
+            data-aos="zoom-in"
+            className="bg-white shadow-xl dark:bg-slate-800 rounded-2xl h-full"
+          >
             <div className="p-6 lg:p-12">
               <div className="w-16 h-16 text-[22px] rounded-full animate-pulse border border-gray-100 shadow-xl flex items-center justify-center mb-6">
                 <i
@@ -60,7 +72,10 @@ const HowItWorks = () => {
               </p>
             </div>
           </div>
-          <div className="bg-white shadow-xl dark:bg-slate-800 rounded-2xl h-full">
+          <div
+            data-aos="fade-up"
+            className="bg-white shadow-xl dark:bg-slate-800 rounded-2xl h-full"
+          >
             <div className="p-6 lg:p-12">
               <div className="w-16 h-16 text-[22px] rounded-full animate-pulse border border-gray-100 shadow-xl flex items-center justify-center mb-6">
                 <i

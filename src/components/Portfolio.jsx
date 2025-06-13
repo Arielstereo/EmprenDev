@@ -9,6 +9,7 @@ const portfolios = [
       "Menú digital interactivo para mejorar la experiencia de los clientes y agilizar pedidos en mesa.",
     href: "https://menu-qr-psi.vercel.app/",
     color: "text-slate-900",
+    mobile: "/tapeo_celu.png",
   },
   {
     img: "/beauty.jpeg",
@@ -17,6 +18,7 @@ const portfolios = [
       "Sitio web profesional para potenciar la presencia online y captar nuevos clientes.",
     href: "https://beauty-spa-ivory.vercel.app/",
     color: "text-slate-100",
+    mobile: "/beauty_mobile.png",
   },
 ];
 
@@ -40,6 +42,9 @@ const PortfolioItem = ({ item }) => (
           <p className="text-lg">{item.details}</p>
         </div>
       </div>
+      <div className="w-1/5 relative -top-10 ml-64">
+        <img src={item.mobile} alt="mobile" />
+      </div>
     </a>
   </div>
 );
@@ -61,8 +66,6 @@ const Portfolio = () => {
             alt="logo"
           />
         </div>
-
-        {/*  Start: Project Gallery Area  */}
         <div
           data-aos="zoom-in-down"
           className="grid grid-cols-2 gap-6 max-w-7xl mx-auto"

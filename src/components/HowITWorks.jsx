@@ -11,7 +11,7 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12">
           <div className="bg-white shadow-xl dark:bg-slate-800 rounded-2xl h-full">
             <div className="p-6 lg:p-12">
               <div className="w-16 h-16 text-[22px] rounded-full animate-pulse border border-gray-100 shadow-xl flex items-center justify-center mb-6">

@@ -26,9 +26,9 @@ const Features = () => {
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-2">
           <div
             data-aos="zoom-in-down"
-            className="relative rounded-lg border border-black dark:border-white p-5 pt-8"
+            className="relative shadow-xl rounded-lg border dark:border-white p-5 pt-8"
           >
-            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
+            <span className="absolute -top-6 left-4 shadow-xl inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
               <span className="icon-[hugeicons--question] text-3xl"></span>
             </span>
             <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
@@ -45,9 +45,9 @@ const Features = () => {
 
           <div
             data-aos="zoom-in-up"
-            className="relative rounded-lg border border-black dark:border-white p-5 pt-8"
+            className="relative shadow-xl rounded-lg border dark:border-white  p-5 pt-8"
           >
-            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
+            <span className="absolute -top-6 left-4 shadow-xl inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
               <span className="icon-[hugeicons--question] text-3xl"></span>
             </span>
             <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
@@ -62,9 +62,9 @@ const Features = () => {
 
           <div
             data-aos="zoom-in"
-            className="relative rounded-lg border border-black dark:border-white p-5 pt-8"
+            className="relative shadow-xl rounded-lg border dark:border-white  p-5 pt-8"
           >
-            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
+            <span className="absolute -top-6 left-4 shadow-xl inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
               <span
                 className="icon-[hugeicons--question]  text-3xl"
                 role="img"
@@ -83,9 +83,9 @@ const Features = () => {
 
           <div
             data-aos="fade-up"
-            className="relative rounded-lg border border-black dark:border-white p-5 pt-8"
+            className="relative shadow-xl rounded-lg border dark:border-white  p-5 pt-8"
           >
-            <span className="absolute -top-6 left-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
+            <span className="absolute -top-6 left-4 shadow-xl inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
               <span className="icon-[hugeicons--question] text-3xl"></span>
             </span>
             <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">

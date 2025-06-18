@@ -92,9 +92,10 @@ const Features = () => {
               ¿Qué incluye el servicio?
             </h3>
             <p className="text-gray-900 dark:text-gray-100">
-              Incluye diseño, desarrollo, optimización para celulares, dominio,
-              hosting y soporte técnico. Nos encargamos de todo para que tu web
-              funcione siempre perfecta.
+              Incluye diseño, desarrollo, optimización para celulares, dominio y
+              hosting por 1 año.También ofrecemos soporte técnico y
+              mantenimiento para que tu web esté siempre actualizada y funcione
+              correctamente.
             </p>
           </div>
         </div>

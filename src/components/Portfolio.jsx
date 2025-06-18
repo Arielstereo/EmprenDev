@@ -6,7 +6,7 @@ const portfolios = [
     img: "/tapeo.jpeg",
     title: "Tapeo Cervecería",
     details:
-      "Menú digital interactivo pensado para cervecerías y bares. Los clientes pueden escanear un QR en la mesa y acceder al menú desde su celular, ver imágenes de los productos, consultar precios y realizar pedidos de forma ágil y sin contacto. El diseño es adaptable a cualquier dispositivo.",
+      "Menú digital interactivo pensado para cervecerías y bares, pero adaptable a otros negocios. Los clientes pueden escanear un QR y acceder al menú desde su celular, ver imágenes de los productos, consultar precios y realizar pedidos de forma ágil. El diseño es adaptable a cualquier dispositivo.",
     href: "https://menu-qr-psi.vercel.app/",
     color: "text-slate-900",
     mobile: "/tapeo_celu.png",
@@ -15,7 +15,7 @@ const portfolios = [
     img: "/beauty.jpeg",
     title: "Beauty Spa",
     details:
-      "Sitio web profesional para un salón de belleza. Permite a los clientes reservar turnos directamente por WhatsApp, consultar precios de servicios y productos, y acceder a las redes sociales del negocio. El diseño es moderno, atractivo y pensado para convertir visitantes en nuevos clientes.",
+      "Sitio web profesional para un salón de belleza. Permite a los clientes reservar turnos directamente por WhatsApp, consultar precios de servicios y productos, y acceder a las redes sociales del negocio. El diseño es moderno, atractivo y pensado para convertir visitantes en nuevos clientes. Es solo un ejemplo, pero se puede personalizar según las necesidades del cliente y a distintos rubros.",
     href: "https://beauty-spa-ivory.vercel.app/",
     color: "text-slate-100",
     mobile: "/beauty_mobile.png",

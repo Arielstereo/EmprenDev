@@ -9,7 +9,7 @@ const Hero = () => {
       <Logo />
       <ModeButton />
       <div className="flex flex-col md:mt-12 gap-2 text-center mx-auto">
-        <div className="flex justify-center items-center ml-0 lg:ml-32 animate__animated animate__bounceInLeft animate__slow">
+        <div className="flex justify-center items-center ml-0 lg:ml-32">
           <h1 className="text-6xl md:text-8xl text-slate-800 dark:text-slate-100 ">
             EmprenDev
           </h1>

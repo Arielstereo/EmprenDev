@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "@components/Hero";
 import Background from "@components/Background.astro";
+import WhatsappButton from "@components/WhatsappButton.astro";
 ---
 
 <Layout title="EmprenDev | Desarrollo de sitios web">
   <Background />
   <main class="flex flex-col justify-center items-center w-full">
     <Hero client:load />
+    <WhatsappButton />
   </main>
 </Layout>

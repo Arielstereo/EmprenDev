@@ -8,6 +8,7 @@ import Header from "@components/Header.astro";
 import Portfolio from "@components/Portfolio.jsx";
 import HowItWorks from "@components/HowITWorks";
 import Navbar from "@components/Navbar";
+import AppointmentForm from "@components/AppointmentForm";
 ---
 
 <Layout title="EmprenDev | Home">
@@ -20,6 +21,7 @@ import Navbar from "@components/Navbar";
     <Portfolio />
     <SectionPrice />
     <HowItWorks />
+    <AppointmentForm client:load />
     <Contact />
     <Footer />
   </main>

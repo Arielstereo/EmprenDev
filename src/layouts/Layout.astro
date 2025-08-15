@@ -37,6 +37,13 @@ import "@fontsource-variable/rubik";
       is:inline
       src="https://files.bpcontent.cloud/2025/07/28/23/20250728230027-KPGIXL9V.js"
       defer></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js");
+        });
+      }
+    </script>
   </head>
   <body>
     <slot />

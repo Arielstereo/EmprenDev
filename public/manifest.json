@@ -1,0 +1,23 @@
+{
+  "name": "EmprenDev",
+  "short_name": "EmprenDev",
+  "description": "Desarrollo y diseño de páginas web profesionales para emprendedores, pymes y pequeños negocios.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#18181b",
+  "theme_color": "#2563eb",
+  "lang": "es",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

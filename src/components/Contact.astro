@@ -2,22 +2,52 @@
 import ContactForm from "./ContactForm";
 ---
 
-<section id="contact" class="w-full py-10 md:py-14 text-white bg-blue-800">
-  <div class="container flex flex-col items-center justify-center px-4 mx-auto">
-    <div class="py-12">
-      <div class="px-6">
-        <div class="relative rounded my-12 py-6">
-          <div class="mb-12">
-            <h2 class="text-3xl leading-none font-bold md:text-[45px] mb-4">
-              Consultanos
-            </h2>
-            <p class="text-lg mb-0">
-              Te ayudamos a llevar tu negocio al siguiente nivel.
-            </p>
+<section id="contact" class="w-full py-10 md:py-14 text-white">
+  <div class="flex justify-center flex-col items-center text-center px-4">
+    <h2
+      class="text-3xl leading-none font-bold md:text-[45px] mb-4 flex gap-2 text-slate-800 dark:text-white"
+    >
+      Hablemos de tu <div class="gradient-blue">proyecto</div>
+    </h2>
+    <p class="text-lg mb-0 text-gray-400">
+      Te ayudamos a llevar tu negocio al siguiente nivel.
+    </p>
+  </div>
+  <div class="container flex justify-center px-4 mx-auto gap-32">
+    <div class="mt-32 text-slate-800 dark:text-white">
+      <h2 class="text-2xl">Conectá con nosotros</h2>
+      <div
+        class="p-6 border-2 border-blue-500 glass-card flex gap-4 rounded-xl mt-12"
+      >
+        <div class="flex items-center gap-6">
+          <span
+            class="icon-[entypo--email] w-8 h-8 bg-blue-500"
+            role="img"
+            aria-hidden="true"></span>
+          <div class="flex flex-col gap-4">
+            <span> Email:</span>
+            <a href="mailto:contacto@emprendev.com">contacto@emprendev.com</a>
           </div>
-          <ContactForm client:load />
         </div>
       </div>
+      <div
+        class="p-6 border-2 border-blue-500 glass-card flex gap-4 rounded-xl mt-12"
+      >
+        <div class="flex items-center gap-6">
+          <span
+            class="icon-[logos--whatsapp-icon] w-8 h-8"
+            role="img"
+            aria-hidden="true"></span>
+          <div class="flex flex-col gap-4">
+            <span> WhatsApp:</span>
+            <a href="https://wa.me/1126922128">1126922128</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative rounded my-12 py-6">
+      <ContactForm client:load />
     </div>
   </div>
 </section>

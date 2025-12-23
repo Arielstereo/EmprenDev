@@ -67,15 +67,21 @@ const ContactForm = () => {
   };
 
   return (
-    <div data-aos="zoom-in-up" className="w-full mx-auto mb-12 p-4">
+    <div
+      data-aos="zoom-in-up"
+      className="w-full mx-auto mb-12 p-4 border-2 glass-card rounded-xl"
+    >
       <form
         onSubmit={sendEmail}
-        className="flex flex-col lg:flex-row gap-4 md:gap-8"
+        className="flex flex-col justify-center items-center lg:flex-row gap-4 md:gap-8 p-16"
       >
         <div className="flex flex-col gap-4">
+          <h2 className="text-slate-800 dark:text-white text-3xl mb-4">
+            Envianos un mensaje
+          </h2>
           <div>
             <label
-              className="block md:text-lg bold text-slate-100 font-medium mb-1"
+              className="block md:text-lg bold text-slate-800 dark:text-slate-100 font-medium mb-1"
               htmlFor="username"
             >
               <span
@@ -86,7 +92,7 @@ const ContactForm = () => {
               Nombre
             </label>
             <input
-              className="min-h-[48px] leading-[48px] bg-[#3A384D] dark:bg-[#1B2635] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
+              className="min-h-[48px] leading-[48px] bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
               id="username"
               name="username"
               placeholder="Juan Perez"
@@ -97,7 +103,7 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 bold text-slate-100"
+              className="block md:text-lg font-medium mb-1 bold text-slate-800 dark:text-slate-100"
               htmlFor="email"
             >
               <span
@@ -108,7 +114,7 @@ const ContactForm = () => {
               Correo Electrónico
             </label>
             <input
-              className="min-h-[48px] leading-[48px] bg-[#3A384D] dark:bg-[#1B2635] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
+              className="min-h-[48px] leading-[48px] bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
               id="email"
               name="email"
               placeholder="juan@gmail.com"
@@ -120,7 +126,7 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 bold text-slate-100"
+              className="block md:text-lg font-medium mb-1 bold text-slate-800 dark:text-slate-100"
               htmlFor="phone"
             >
               <span
@@ -131,7 +137,7 @@ const ContactForm = () => {
               Teléfono
             </label>
             <input
-              className="min-h-[48px] leading-[48px] bg-[#3A384D] dark:bg-[#1B2635] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
+              className="min-h-[48px] leading-[48px] bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
               id="phone"
               name="phone"
               placeholder="1122334455"
@@ -140,11 +146,9 @@ const ContactForm = () => {
               required
             />
           </div>
-        </div>
-        <div className="flex flex-col gap-5">
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 bold text-slate-100 md:w-96"
+              className="block md:text-lg font-medium mb-1 bold text-slate-800 dark:text-slate-100 md:w-96"
               htmlFor="message"
             >
               <span
@@ -155,7 +159,7 @@ const ContactForm = () => {
               Mensaje
             </label>
             <textarea
-              className="min-h-[48px] leading-[48px] bg-[#3A384D] dark:bg-[#1B2635] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full px-5"
+              className="min-h-[48px] leading-[48px] bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full px-5"
               id="msg"
               name="msg"
               placeholder="Escribe tu consulta"
@@ -167,7 +171,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="rounded-lg bg-slate-100 px-8 py-3 mt-2 text-center font-semibold text-slate-900 outline-none ring-slate-100 transition duration-100 hover:bg-slate-300"
+            className="rounded-lg bg-slate-800 dark:bg-slate-100 hover:dark:bg-slate-300 px-8 py-3 mt-2 text-center font-semibold text-slate-100 dark:text-slate-800 outline-none ring-slate-100 transition duration-100 hover:bg-slate-700"
           >
             Enviar consulta
           </button>

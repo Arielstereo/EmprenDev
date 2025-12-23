@@ -1,104 +1,73 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import Accordion from "./Accordion";
 
 const Features = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  const items = [
+    {
+      title: "¿Por qué invertir en una web para mi negocio?",
+      content:
+        "Una presencia digital profesional genera confianza inmediata en tus clientes potenciales. El 80% de los consumidores investigan online antes de comprar. Sin una web, pierdes esas oportunidades. Una solución digital aumenta tu visibilidad, atrae más clientes y te posiciona como profesional en tu rubro.",
+      aos: "zoom-in-down",
+    },
+    {
+      title: "¿Cuánto tiempo toma desarrollar mi proyecto?",
+      content:
+        "Depende de la complejidad, pero trabajamos de forma ágil. Un menú digital o catálogo básico puede estar listo en 1-2 semanas. Proyectos más complejos como e-commerce pueden tomar 3-4 semanas. Lo importante: empezamos rápido y te mantenemos informado en cada paso.",
+      aos: "zoom-in-up",
+    },
+    {
+      title: "¿Puedo personalizar mi sitio web?",
+      content:
+        "¡Claro! Personalizamos el diseño, los colores, las secciones y el contenido para que tu web refleje la identidad de tu negocio y se adapte a lo que necesitas.",
+      aos: "zoom-in",
+    },
+    {
+      title: "¿Los precios incluyen mantenimiento y actualizaciones?",
+      content:
+        "Trabajamos con planes flexibles adaptados a tu presupuesto. El desarrollo inicial es un pago único. Para mantenimiento, hosting y actualizaciones, ofrecemos planes mensuales opcionales. Consultá sin compromiso para armar un paquete que se ajuste a tu realidad.",
+      aos: "fade-up",
+    },
+  ];
 
   return (
-    <div id="features" className="md:py-32 dark:bg-zinc-900">
+    <div id="features" className="py-32">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="flex gap-2 justify-center items-center mb-16 animate__animated animate__backInLeft">
-          <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 dark:text-slate-50 md:mb-6 lg:text-3xl">
-            Preguntas frecuentes
-          </h2>
-          <img
-            src="./logo_png.webp"
-            className="flex h-16 w-16 rounded-full mb-6"
-            alt="logo"
-          />
-        </div>
-
-        <div className="grid gap-8 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-2">
-          <div
-            data-aos="zoom-in-down"
-            className="relative shadow-xl rounded-lg border dark:border-white p-5 pt-8"
-          >
-            <span className="absolute -top-6 left-4 shadow-xl inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
-              <span className="icon-[hugeicons--question] text-3xl"></span>
-            </span>
-            <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
-              ¿Qué soluciones ofrecen para mi emprendimiento?
-            </h3>
-            <p className="text-gray-900 dark:text-gray-100">
-              Creamos páginas web personalizadas para todo tipo de negocios:
-              tiendas, peluquerías, cervecerías, gimnasios, deco y más. También
-              desarrollamos menús digitales para restaurantes y bares. Nos
-              adaptamos a tus necesidades y presupuesto para potenciar tu
-              presencia online.
-            </p>
-          </div>
-
-          <div
-            data-aos="zoom-in-up"
-            className="relative shadow-xl rounded-lg border dark:border-white  p-5 pt-8"
-          >
-            <span className="absolute -top-6 left-4 shadow-xl inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
-              <span className="icon-[hugeicons--question] text-3xl"></span>
-            </span>
-            <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
-              ¿Por qué es importante tener una página web?
-            </h3>
-            <p className="text-gray-900 dark:text-gray-100">
-              Una web profesional aumenta tu visibilidad, atrae nuevos clientes
-              y genera confianza. Es la mejor forma de mostrar tus productos o
-              servicios y destacar frente a la competencia.
-            </p>
-          </div>
-
-          <div
-            data-aos="zoom-in"
-            className="relative shadow-xl rounded-lg border dark:border-white  p-5 pt-8"
-          >
-            <span className="absolute -top-6 left-4 shadow-xl inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
-              <span
-                className="icon-[hugeicons--question]  text-3xl"
-                role="img"
-                aria-hidden="true"
-              ></span>
-            </span>
-            <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
-              ¿Puedo personalizar mi sitio web?
-            </h3>
-            <p className="text-gray-900 dark:text-gray-100">
-              ¡Claro! Personalizamos el diseño, los colores, las secciones y el
-              contenido para que tu web refleje la identidad de tu negocio y se
-              adapte a lo que necesitas.
-            </p>
-          </div>
-
-          <div
-            data-aos="fade-up"
-            className="relative shadow-xl rounded-lg border dark:border-white  p-5 pt-8"
-          >
-            <span className="absolute -top-6 left-4 shadow-xl inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-500 text-white">
-              <span className="icon-[hugeicons--question] text-3xl"></span>
-            </span>
-            <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
-              ¿Qué incluye el servicio?
-            </h3>
-            <p className="text-gray-900 dark:text-gray-100">
-              Incluye diseño, desarrollo, optimización para celulares, dominio y
-              hosting por 1 año.También ofrecemos soporte técnico y
-              mantenimiento para que tu web esté siempre actualizada y funcione
-              correctamente.
-            </p>
+          <div className="flex gap-2">
+            <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 dark:text-slate-50 md:mb-6 lg:text-4xl">
+              Preguntas
+            </h2>
+            <h2 className="gradient-blue mb-4 text-center text-2xl font-bold md:mb-6 lg:text-4xl">
+              frecuentes
+            </h2>
           </div>
         </div>
+
+        <div className="mx-auto max-w-4xl">
+          <Accordion items={items} />
+        </div>
+      </div>
+      <div className="w-full mx-auto mt-32 flex flex-col gap-8 justify-center items-center">
+        <h3 className="text-2xl dark:text-white">
+          ¿Listo para transformar tu negocio?
+        </h3>
+        <a
+          className="rounded-lg flex justify-center items-center bg-green-600 px-8 py-3 text-center text-sm font-semibold text-gray-100 outline-none ring-blue-300 transition-transform duration-200 hover:border-black hover:dark:text-white hover:scale-110 hover:bg-green-500 hover:border-none dark:hover:border-white border-2 dark:hover:text-white focus-visible:ring md:text-base"
+          role="button"
+          href="https://api.whatsapp.com/send?phone=+5491126922128&text=Hola%20EmprenDev,%20necesito%20asesoramiento:"
+          aria-label="Ir a la sección de precios y comenzar tu sitio web"
+          target="_blank"
+        >
+          <i
+            className="icon-[iconoir--whatsapp-solid] w-6 h-6 mr-2"
+            role="img"
+            aria-hidden="true"
+          ></i>
+          Consulta por WhatsApp!
+        </a>
+        <p className="text-lg text-muted text-gray-500 mt-4">
+          Respondemos en minutos • Sin costo ni compromiso • Presupuesto
+          personalizado
+        </p>
       </div>
     </div>
   );

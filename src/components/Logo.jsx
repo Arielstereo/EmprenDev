@@ -7,11 +7,11 @@ const Logo = () => {
         aria-label="Ir al inicio de EmprenDev"
       >
         <img
-          src="./logo_png.webp"
+          src="./logo_png.png"
           className="w-16 h-16 rounded-full"
           alt="logo EmprenDev"
         />
-        <span className="text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-300 text-lg font-semibold">
+        <span className="text-black dark:text-white hover:text-slate-700 dark:hover:text-slate-200 text-lg font-semibold">
           EmprenDev
         </span>
       </a>

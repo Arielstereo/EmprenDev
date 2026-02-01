@@ -2,51 +2,65 @@
 import ContactForm from "./ContactForm";
 ---
 
-<section id="contact" class="w-full py-10 md:py-14 text-white">
-  <div class="flex justify-center flex-col items-center text-center px-4">
+<section id="contact" class="w-full py-10 md:py-16 lg:py-20 text-white">
+  <div
+    class="flex justify-center flex-col items-center text-center px-4 mb-8 md:mb-12"
+  >
     <h2
-      class="text-3xl leading-none font-bold md:text-[45px] mb-4 flex gap-2 text-slate-800 dark:text-white"
+      class="text-2xl sm:text-3xl leading-tight font-bold md:text-[45px] mb-4 flex flex-col sm:flex-row gap-2 justify-center text-slate-800 dark:text-white"
     >
       Hablemos de tu <div class="gradient-blue">proyecto</div>
     </h2>
-    <p class="text-lg mb-0 text-gray-400">
+    <p class="text-base sm:text-lg mb-0 text-gray-400 max-w-2xl">
       Te ayudamos a llevar tu negocio al siguiente nivel.
     </p>
   </div>
-  <div class="container flex justify-center px-4 mx-auto gap-32">
-    <div class="mt-32 text-slate-800 dark:text-white">
-      <h2 class="text-2xl">Conectá con nosotros</h2>
+  <div
+    class="container mx-auto px-4 flex flex-col lg:flex-row justify-center lg:gap-12 xl:gap-20 items-start lg:items-center"
+  >
+    <div class="w-full lg:w-auto text-slate-800 dark:text-white mb-8 lg:mb-0">
+      <h2 class="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8">
+        Conectá con nosotros
+      </h2>
       <div
-        class="p-6 border-2 border-blue-500 glass-card flex gap-4 rounded-xl mt-12"
+        class="p-4 sm:p-6 border-2 border-blue-500 glass-card flex gap-3 sm:gap-4 rounded-xl mb-4 sm:mb-6"
       >
-        <div class="flex items-center gap-6">
+        <div class="flex items-start sm:items-center gap-3 sm:gap-4">
           <span
-            class="icon-[entypo--email] w-8 h-8 bg-blue-500"
+            class="icon-[entypo--email] w-6 h-6 sm:w-8 sm:h-8 bg-blue-500 flex-shrink-0 mt-1 sm:mt-0"
             role="img"
             aria-hidden="true"></span>
-          <div class="flex flex-col gap-4">
-            <span> Email:</span>
-            <a href="mailto:contacto@emprendev.com">contacto@emprendev.com</a>
+          <div class="flex flex-col gap-2 sm:gap-4">
+            <span class="text-sm sm:text-base">Email:</span>
+            <a
+              href="mailto:contacto@emprendev.com"
+              class="text-sm sm:text-base hover:text-blue-400 transition"
+              >contacto@emprendev.com</a
+            >
           </div>
         </div>
       </div>
       <div
-        class="p-6 border-2 border-blue-500 glass-card flex gap-4 rounded-xl mt-12"
+        class="p-4 sm:p-6 border-2 border-blue-500 glass-card flex gap-3 sm:gap-4 rounded-xl"
       >
-        <div class="flex items-center gap-6">
+        <div class="flex items-start sm:items-center gap-3 sm:gap-4">
           <span
-            class="icon-[logos--whatsapp-icon] w-8 h-8"
+            class="icon-[logos--whatsapp-icon] w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0 mt-1 sm:mt-0"
             role="img"
             aria-hidden="true"></span>
-          <div class="flex flex-col gap-4">
-            <span> WhatsApp:</span>
-            <a href="https://wa.me/1126922128">1126922128</a>
+          <div class="flex flex-col gap-2 sm:gap-4">
+            <span class="text-sm sm:text-base">WhatsApp:</span>
+            <a
+              href="https://wa.me/1126922128"
+              class="text-sm sm:text-base hover:text-blue-400 transition"
+              >1126922128</a
+            >
           </div>
         </div>
       </div>
     </div>
 
-    <div class="relative rounded my-12 py-6">
+    <div class="w-full lg:w-auto">
       <ContactForm client:load />
     </div>
   </div>

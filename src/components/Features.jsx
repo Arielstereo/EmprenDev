@@ -47,7 +47,7 @@ const Features = () => {
         </div>
       </div>
       <div className="w-full mx-auto mt-32 flex flex-col gap-8 justify-center items-center">
-        <h3 className="text-2xl dark:text-white">
+        <h3 className="text-xl md:text-2xl dark:text-white">
           ¿Listo para transformar tu negocio?
         </h3>
         <a
@@ -64,7 +64,7 @@ const Features = () => {
           ></i>
           Consulta por WhatsApp!
         </a>
-        <p className="text-lg text-muted text-gray-500 mt-4">
+        <p className="text-lg text-muted text-center text-gray-500 mt-4">
           Respondemos en minutos • Sin costo ni compromiso • Presupuesto
           personalizado
         </p>

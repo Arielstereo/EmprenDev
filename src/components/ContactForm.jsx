@@ -30,7 +30,7 @@ const ContactForm = () => {
         e.target,
         {
           publicKey: import.meta.env.PUBLIC_KEY,
-        }
+        },
       )
       .then(
         () => {
@@ -54,7 +54,7 @@ const ContactForm = () => {
         },
         (error) => {
           console.log("FAILED...", error.text);
-        }
+        },
       );
   };
 
@@ -69,30 +69,30 @@ const ContactForm = () => {
   return (
     <div
       data-aos="zoom-in-up"
-      className="w-full mx-auto mb-12 p-4 border-2 glass-card rounded-xl"
+      className="w-full mx-auto mb-8 sm:mb-12 p-3 sm:p-4 lg:p-0 border-2 glass-card rounded-xl"
     >
       <form
         onSubmit={sendEmail}
-        className="flex flex-col justify-center items-center lg:flex-row gap-4 md:gap-8 p-16"
+        className="flex flex-col justify-center items-center gap-4 sm:gap-6 p-4 sm:p-8 lg:p-12"
       >
-        <div className="flex flex-col gap-4">
-          <h2 className="text-slate-800 dark:text-white text-3xl mb-4">
+        <div className="w-full flex flex-col gap-3 sm:gap-4">
+          <h2 className="text-slate-800 dark:text-white text-2xl sm:text-3xl lg:text-3xl mb-2 sm:mb-4 text-center lg:text-left">
             Envianos un mensaje
           </h2>
           <div>
             <label
-              className="block md:text-lg bold text-slate-800 dark:text-slate-100 font-medium mb-1"
+              className="block text-sm sm:text-base md:text-lg font-medium mb-2 text-slate-800 dark:text-slate-100"
               htmlFor="username"
             >
               <span
-                className="icon-[fa6-solid--user] mx-2 h-6 w-6"
+                className="icon-[fa6-solid--user] mx-2 h-5 w-5 sm:h-6 sm:w-6 inline-block"
                 role="img"
                 aria-hidden="true"
               ></span>
               Nombre
             </label>
             <input
-              className="min-h-[48px] leading-[48px] bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
+              className="min-h-[48px] leading-[48px] bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border-[#86b7fe] w-full px-4 sm:px-5 text-sm sm:text-base"
               id="username"
               name="username"
               placeholder="Juan Perez"
@@ -103,18 +103,18 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 bold text-slate-800 dark:text-slate-100"
+              className="block text-sm sm:text-base md:text-lg font-medium mb-2 text-slate-800 dark:text-slate-100"
               htmlFor="email"
             >
               <span
-                className="icon-[entypo--email] mx-2 h-6 w-6"
+                className="icon-[entypo--email] mx-2 h-5 w-5 sm:h-6 sm:w-6 inline-block"
                 role="img"
                 aria-hidden="true"
               ></span>
               Correo Electrónico
             </label>
             <input
-              className="min-h-[48px] leading-[48px] bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
+              className="min-h-[48px] leading-[48px] bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border-[#86b7fe] w-full px-4 sm:px-5 text-sm sm:text-base"
               id="email"
               name="email"
               placeholder="juan@gmail.com"
@@ -126,18 +126,18 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 bold text-slate-800 dark:text-slate-100"
+              className="block text-sm sm:text-base md:text-lg font-medium mb-2 text-slate-800 dark:text-slate-100"
               htmlFor="phone"
             >
               <span
-                className="icon-[oi--phone] mx-2 h-6 w-6"
+                className="icon-[oi--phone] mx-2 h-5 w-5 sm:h-6 sm:w-6 inline-block"
                 role="img"
                 aria-hidden="true"
               ></span>
               Teléfono
             </label>
             <input
-              className="min-h-[48px] leading-[48px] bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full md:w-96 px-5"
+              className="min-h-[48px] leading-[48px] bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border-[#86b7fe] w-full px-4 sm:px-5 text-sm sm:text-base"
               id="phone"
               name="phone"
               placeholder="1122334455"
@@ -148,18 +148,18 @@ const ContactForm = () => {
           </div>
           <div>
             <label
-              className="block md:text-lg font-medium mb-1 bold text-slate-800 dark:text-slate-100 md:w-96"
+              className="block text-sm sm:text-base md:text-lg font-medium mb-2 text-slate-800 dark:text-slate-100"
               htmlFor="message"
             >
               <span
-                className="icon-[mynaui--message] mx-2 h-6 w-6"
+                className="icon-[mynaui--message] mx-2 h-5 w-5 sm:h-6 sm:w-6 inline-block"
                 role="img"
                 aria-hidden="true"
               ></span>
               Mensaje
             </label>
             <textarea
-              className="min-h-[48px] leading-[48px] bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full px-5"
+              className="bg-gray-100 dark:bg-[#1B2635] border border-blue-500 rounded-xl focus:outline-none focus:border-[#86b7fe] w-full px-4 sm:px-5 py-3 text-sm sm:text-base"
               id="msg"
               name="msg"
               placeholder="Escribe tu consulta"
@@ -171,7 +171,7 @@ const ContactForm = () => {
           </div>
           <button
             type="submit"
-            className="rounded-lg bg-slate-800 dark:bg-slate-100 hover:dark:bg-slate-300 px-8 py-3 mt-2 text-center font-semibold text-slate-100 dark:text-slate-800 outline-none ring-slate-100 transition duration-100 hover:bg-slate-700"
+            className="rounded-lg bg-slate-800 dark:bg-slate-100 hover:bg-slate-700 dark:hover:bg-slate-200 px-6 sm:px-8 py-3 w-full sm:w-auto text-center font-semibold text-slate-100 dark:text-slate-800 outline-none transition duration-100 mt-2"
           >
             Enviar consulta
           </button>

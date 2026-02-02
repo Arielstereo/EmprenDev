@@ -66,7 +66,7 @@ const Portfolio = () => {
         <div className="flex flex-col gap-2 justify-center items-center mb-6 sm:mb-8 lg:mb-12 mt-4 sm:mt-8">
           <div className="flex flex-col gap-2 w-full">
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center">
-              <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 dark:text-slate-100 leading-tight">
+              <h2 className="text-center text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight text-gray-800 dark:text-slate-100">
                 Proyectos que
                 <span className="gradient-blue inline ml-2">
                   generan resultados

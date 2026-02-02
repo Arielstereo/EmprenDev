@@ -77,7 +77,7 @@ export default function NavbarMobile() {
               <a
                 onClick={() => setOpen(false)}
                 className="block text-slate-900 dark:text-white text-base py-2 px-3 rounded hover:bg-gray-100 dark:hover:bg-zinc-800"
-                href="#price"
+                href="#services"
               >
                 Servicios
               </a>

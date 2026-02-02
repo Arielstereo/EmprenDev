@@ -22,8 +22,8 @@ const Navbar = () => {
           <li className="text-base lg:text-lg">
             <a
               className="text-slate-950 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 transition"
-              href="#price"
-              aria-label="Ir a la sección de precios"
+              href="#services"
+              aria-label="Ir a la sección de servicios"
             >
               Servicios
             </a>

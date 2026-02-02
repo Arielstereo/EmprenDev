@@ -33,10 +33,10 @@ const Features = () => {
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="flex gap-2 justify-center items-center mb-16 animate__animated animate__backInLeft">
           <div className="flex gap-2">
-            <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 dark:text-slate-50 md:mb-6 lg:text-4xl">
+            <h2 className="mb-4 text-center text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight text-gray-800 dark:text-slate-50 md:mb-6">
               Preguntas
             </h2>
-            <h2 className="gradient-blue mb-4 text-center text-2xl font-bold md:mb-6 lg:text-4xl">
+            <h2 className="gradient-blue mb-4 text-center text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight md:mb-6">
               frecuentes
             </h2>
           </div>

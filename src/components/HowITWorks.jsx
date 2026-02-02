@@ -6,7 +6,7 @@ const HowItWorks = () => {
       <div className="container px-4 mx-auto">
         <div className="flex flex-col gap-2">
           <div className="flex gap-2 justify-center items-center">
-            <h2 className="text-center text-3xl font-bold text-gray-800 dark:text-slate-100 lg:text-4xl">
+            <h2 className="text-center text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight text-gray-800 dark:text-slate-100">
               Cómo empezar{" "}
               <div className="gradient-blue">en 4 pasos simples</div>
             </h2>

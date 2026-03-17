@@ -55,7 +55,7 @@ export default function Accordion({ items = [], className = "" }) {
               className="w-full text-left px-5 py-4 flex items-start justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
             >
               <div className="flex items-center gap-4">
-                <span className="inline-flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-blue-500 text-white shadow-sm">
+                <span className="inline-flex h-10 w-10 p-4 md:h-12 md:w-12 items-center justify-center rounded-full bg-blue-500 text-white shadow-sm">
                   <span className="text-xl md:text-2xl">?</span>
                 </span>
                 <h3 className="text-lg font-semibold text-gray-800 hover:text-blue-500 hover:dark:text-blue-500 dark:text-gray-100">

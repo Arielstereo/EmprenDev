@@ -66,11 +66,11 @@ const Portfolio = () => {
         <div className="flex flex-col gap-2 justify-center items-center mb-6 sm:mb-8 lg:mb-12 mt-4 sm:mt-8">
           <div className="flex flex-col gap-2 w-full">
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center">
-              <h2 className="text-center text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight text-gray-800 dark:text-slate-100">
+              <h2 className="text-center text-4xl lg:text-[40px] font-bold leading-tight text-gray-800 dark:text-slate-100">
                 Proyectos que
-                <span className="gradient-blue inline ml-2">
+                <div className="gradient-blue text-4xl font-bold ml-2">
                   generan resultados
-                </span>
+                </div>
               </h2>
               <img
                 src="./logo_png.png"
@@ -78,9 +78,9 @@ const Portfolio = () => {
                 alt="logo"
               />
             </div>
-            <p className="text-sm sm:text-base md:text-lg text-gray-500 dark:text-slate-400 mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto text-center">
-              Casos de éxito de emprendedores que transformaron su presencia
-              digital
+            <p className="text-lg text-gray-500 dark:text-slate-400 mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto text-center">
+              Proyectos reales para clientes reales. Soluciones digitales
+              diseñadas para impulsar negocios y generar resultados tangibles.
             </p>
           </div>
         </div>

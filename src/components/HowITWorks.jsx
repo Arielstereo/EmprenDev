@@ -19,7 +19,7 @@ const HowItWorks = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-2 mt-12">
-          <div data-aos="zoom-in-down">
+          <div>
             <div className="p-6 lg:p-12 flex flex-col justify-center items-center">
               <div className="text-[22px] text-white">
                 <i
@@ -36,7 +36,7 @@ const HowItWorks = () => {
               </p>
             </div>
           </div>
-          <div data-aos="zoom-in-down">
+          <div>
             <div className="p-6 lg:p-12 flex flex-col justify-center items-center">
               <div className="text-[22px] text-white">
                 <i
@@ -53,7 +53,7 @@ const HowItWorks = () => {
               </p>
             </div>
           </div>
-          <div data-aos="zoom-in-down">
+          <div>
             <div className="p-6 lg:p-12 flex flex-col justify-center items-center">
               <div className="text-[22px] text-white">
                 <i
@@ -70,7 +70,7 @@ const HowItWorks = () => {
               </p>
             </div>
           </div>
-          <div data-aos="zoom-in-down">
+          <div>
             <div className="p-6 lg:p-12 flex flex-col justify-center items-center">
               <div className="text-[22px] text-white">
                 <i

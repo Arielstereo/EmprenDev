@@ -67,10 +67,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div
-      data-aos="zoom-in-up"
-      className="w-full mx-auto mb-8 sm:mb-12 p-3 sm:p-4 lg:p-0 border-2 glass-card rounded-xl"
-    >
+    <div className="w-full mx-auto mb-8 sm:mb-12 p-3 sm:p-4 lg:p-0 border-2 glass-card rounded-xl">
       <form
         onSubmit={sendEmail}
         className="flex flex-col justify-center items-center gap-4 sm:gap-6 p-4 sm:p-8 lg:p-12"

@@ -22,10 +22,7 @@ const portfolios = [
 ];
 
 const PortfolioItem = ({ item }) => (
-  <div
-    data-aos="zoom-in-up"
-    className="group overflow-hidden glass-card rounded-2xl h-full"
-  >
+  <div className="group overflow-hidden glass-card rounded-2xl h-full">
     <a href={item.href} target="_blank" rel="noopener noreferrer">
       <div className="relative group overflow-hidden w-full h-40 sm:h-48 md:h-56">
         <img

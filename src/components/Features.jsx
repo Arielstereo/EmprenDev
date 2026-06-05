@@ -6,32 +6,28 @@ const Features = () => {
       title: "¿Por qué invertir en una web para mi negocio?",
       content:
         "Una presencia digital profesional genera confianza inmediata en tus clientes potenciales. El 80% de los consumidores investigan online antes de comprar. Sin una web, pierdes esas oportunidades. Una solución digital aumenta tu visibilidad, atrae más clientes y te posiciona como profesional en tu rubro.",
-      aos: "zoom-in-down",
     },
     {
       title: "¿Cuánto tiempo toma desarrollar mi proyecto?",
       content:
         "Depende de la complejidad, pero trabajamos de forma ágil. Un menú digital o catálogo básico puede estar listo en 1-2 semanas. Proyectos más complejos como e-commerce pueden tomar 3-4 semanas. Lo importante: empezamos rápido y te mantenemos informado en cada paso.",
-      aos: "zoom-in-up",
     },
     {
       title: "¿Puedo personalizar mi sitio web?",
       content:
         "¡Claro! Personalizamos el diseño, los colores, las secciones y el contenido para que tu web refleje la identidad de tu negocio y se adapte a lo que necesitas.",
-      aos: "zoom-in",
     },
     {
       title: "¿Los precios incluyen mantenimiento y actualizaciones?",
       content:
         "Trabajamos con planes flexibles adaptados a tu presupuesto. El desarrollo inicial es un pago único. Para mantenimiento, hosting y actualizaciones, ofrecemos planes mensuales opcionales. Consultá sin compromiso para armar un paquete que se ajuste a tu realidad.",
-      aos: "fade-up",
     },
   ];
 
   return (
     <div id="features" className="py-32">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <div className="flex gap-2 justify-center items-center mb-16 animate__animated animate__backInLeft">
+        <div className="flex gap-2 justify-center items-center mb-16">
           <div className="flex gap-2">
             <h2 className="mb-4 text-center text-4xl lg:text-[40px] font-bold leading-tight text-gray-800 dark:text-slate-50 md:mb-6">
               Preguntas

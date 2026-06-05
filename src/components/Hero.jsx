@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="flex flex-col mt-12 gap-2 text-center mx-auto px-3 sm:px-4 max-w-4xl">
         <div className="flex justify-center items-center md:mb-8 mb-4">
           <div className="flex flex-col gap-2">
-            <h1 className="text-7xl lg:text-9xl gradient-blue font-bold animate__animated animate__fadeInUp animate__slower">
+            <h1 className="text-6xl lg:text-9xl gradient-blue font-bold animate__animated animate__fadeInUp animate__slower">
               EmprenDev
             </h1>
             <h2 className="text-slate-800 dark:text-slate-100 text-4xl lg:text-6xl font-bold animate__animated animate__backInLeft">

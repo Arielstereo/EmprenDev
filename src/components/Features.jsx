@@ -25,42 +25,37 @@ const Features = () => {
   ];
 
   return (
-    <div id="features" className="py-32">
+    <div id="features" className="py-20 md:py-28">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <div className="flex gap-2 justify-center items-center mb-16">
-          <div className="flex gap-2">
-            <h2 className="mb-4 text-center text-4xl lg:text-[40px] font-bold leading-tight text-gray-800 dark:text-slate-50 md:mb-6">
-              Preguntas
-            </h2>
-            <h2 className="gradient-blue mb-4 text-center text-4xl lg:text-[40px] font-bold leading-tight md:mb-6">
-              frecuentes
-            </h2>
-          </div>
+        <div className="flex justify-center items-center mb-12 md:mb-16">
+          <h2 className="text-4xl lg:text-[40px] font-bold leading-tight text-txt-primary">
+            Preguntas <span className="gradient-blue">frecuentes</span>
+          </h2>
         </div>
 
         <div className="mx-auto max-w-4xl">
           <Accordion items={items} />
         </div>
       </div>
-      <div className="w-full mx-auto mt-32 flex flex-col gap-8 justify-center items-center">
-        <h3 className="text-xl md:text-2xl dark:text-white">
+      <div className="w-full mx-auto mt-16 md:mt-24 flex flex-col gap-6 justify-center items-center text-center px-4">
+        <h3 className="text-xl md:text-2xl text-txt-primary">
           ¿Listo para transformar tu negocio?
         </h3>
         <a
-          className="rounded-lg flex justify-center items-center bg-green-600 px-8 py-3 text-center text-sm font-semibold text-gray-100 outline-none ring-blue-300 transition-transform duration-200 hover:border-black hover:dark:text-white hover:scale-110 hover:bg-green-500 hover:border-none dark:hover:border-white border-2 dark:hover:text-white focus-visible:ring md:text-base"
+          className="inline-flex items-center rounded-lg bg-green-600 px-8 py-3.5 text-base font-semibold text-white hover:bg-green-500 shadow-glow transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
           role="button"
           href="https://api.whatsapp.com/send?phone=+5491126922128&text=Hola%20EmprenDev,%20necesito%20asesoramiento:"
-          aria-label="Ir a la sección de precios y comenzar tu sitio web"
+          aria-label="Consultar por WhatsApp y comenzar tu sitio web"
           target="_blank"
         >
           <i
-            className="icon-[iconoir--whatsapp-solid] w-6 h-6 mr-2"
+            className="icon-[iconoir--whatsapp-solid] w-5 h-5 mr-2"
             role="img"
             aria-hidden="true"
           ></i>
           Consulta por WhatsApp!
         </a>
-        <p className="text-lg text-muted text-center text-gray-500 mt-4">
+        <p className="text-base text-txt-muted">
           Respondemos en minutos • Sin costo ni compromiso • Presupuesto
           personalizado
         </p>

@@ -11,23 +11,17 @@ export default function NavbarMobile() {
   }, [open]);
 
   return (
-    <nav className="py-5 w-full fixed top-0 left-0 right-0 z-50 md:hidden bg-white/95 dark:bg-[#1a212d] backdrop-blur-sm">
-      <div className="max-w-screen-2xl mx-auto px-4 flex items-center justify-between">
-        {/* Logo a la izquierda */}
-        <div className="flex items-center pb-20">
-          <a href="/" aria-label="Inicio">
-            <Logo />
-          </a>
-        </div>
+    <nav className="w-full fixed top-0 left-0 right-0 z-50 md:hidden glass border-b border-border-default">
+      <div className="max-w-screen-2xl mx-auto px-4 flex items-center justify-between h-20">
+        <Logo />
 
-        {/* Hamburger a la derecha */}
-        <div className="flex items-center">
+        <div className="relative z-50">
           <button
             onClick={() => setOpen((s) => !s)}
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
-            className="p-3 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 text-slate-900 dark:text-white"
+            className="p-2 rounded-lg text-txt-primary dark:text-white hover:bg-accent-subtle focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-colors"
           >
             <span
               className={`block w-6 h-0.5 bg-current transform transition duration-300 ${
@@ -48,7 +42,6 @@ export default function NavbarMobile() {
         </div>
       </div>
 
-      {/* Panel absoluto para que no afecte el flujo cuando está cerrado */}
       <div
         id="mobile-menu"
         className={`absolute top-full left-0 right-0 z-40 origin-top transform transition-all duration-300 ease-in-out ${
@@ -57,17 +50,16 @@ export default function NavbarMobile() {
             : "scale-y-0 opacity-0 pointer-events-none"
         }`}
       >
-        <div className="bg-white dark:bg-[#1a212d] px-4 py-4 shadow-md">
-          {/* ModeButton dentro del panel */}
+        <div className="glass px-4 py-4 shadow-xl dark:shadow-black/40">
           <div className="flex justify-end mb-3">
             <ModeButton />
           </div>
 
-          <ul className="flex flex-col gap-3">
+          <ul className="flex flex-col gap-1">
             <li>
               <a
                 onClick={() => setOpen(false)}
-                className="block text-slate-900 dark:text-white text-base py-2 px-3 rounded hover:bg-gray-100 dark:hover:bg-zinc-800"
+                className="block text-txt-primary dark:text-white text-base py-2 px-3 rounded-lg hover:bg-accent-subtle hover:text-accent transition-colors"
                 href="#features"
               >
                 Faq
@@ -76,7 +68,7 @@ export default function NavbarMobile() {
             <li>
               <a
                 onClick={() => setOpen(false)}
-                className="block text-slate-900 dark:text-white text-base py-2 px-3 rounded hover:bg-gray-100 dark:hover:bg-zinc-800"
+                className="block text-txt-primary dark:text-white text-base py-2 px-3 rounded-lg hover:bg-accent-subtle hover:text-accent transition-colors"
                 href="#services"
               >
                 Servicios
@@ -85,16 +77,16 @@ export default function NavbarMobile() {
             <li>
               <a
                 onClick={() => setOpen(false)}
-                className="block text-slate-900 dark:text-white text-base py-2 px-3 rounded hover:bg-gray-100 dark:hover:bg-zinc-800"
+                className="block text-txt-primary dark:text-white text-base py-2 px-3 rounded-lg hover:bg-accent-subtle hover:text-accent transition-colors"
                 href="#projects"
               >
                 Proyectos
               </a>
             </li>
-            <li>
+            <li className="mt-2">
               <a
                 onClick={() => setOpen(false)}
-                className="block text-white bg-blue-500 hover:bg-blue-600 py-2 px-3 rounded-2xl text-center"
+                className="block text-white bg-accent hover:bg-accent-hover py-2.5 px-3 rounded-lg text-center font-semibold transition-colors"
                 href="#contact"
               >
                 Consulta ahora

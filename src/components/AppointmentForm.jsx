@@ -35,14 +35,14 @@ export default function AppointmentForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className=" rounded-lg shadow-lg p-6 w-full max-w-3xl mx-auto my-8"
+      className="glass-card rounded-card p-6 w-full max-w-3xl mx-auto my-8"
     >
-      <h3 className="text-2xl font-bold mb-4 text-center text-zinc-900 dark:text-white">
+      <h3 className="text-2xl font-bold mb-4 text-center text-txt-primary">
         Agenda una reunión online
       </h3>
       <div className="flex flex-col md:flex-row md:items-end gap-4">
         <div className="flex-1">
-          <label className="block mb-1 font-medium text-zinc-700 dark:text-zinc-200">
+          <label className="block mb-1 font-medium text-txt-secondary">
             Nombre
           </label>
           <input
@@ -52,11 +52,11 @@ export default function AppointmentForm() {
             onChange={handleChange}
             autoComplete="off"
             required
-            className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-400 dark:bg-zinc-700 dark:text-white"
+            className="w-full px-3 py-2 rounded-control bg-surface-1 border border-border-default text-txt-primary placeholder:text-txt-muted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent-subtle"
           />
         </div>
         <div className="flex-1">
-          <label className="block mb-1 font-medium text-zinc-700 dark:text-zinc-200">
+          <label className="block mb-1 font-medium text-txt-secondary">
             Teléfono
           </label>
           <input
@@ -66,11 +66,11 @@ export default function AppointmentForm() {
             onChange={handleChange}
             autoComplete="off"
             required
-            className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-400 dark:bg-zinc-700 dark:text-white"
+            className="w-full px-3 py-2 rounded-control bg-surface-1 border border-border-default text-txt-primary placeholder:text-txt-muted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent-subtle"
           />
         </div>
         <div className="flex-1">
-          <label className="block mb-1 font-medium text-zinc-700 dark:text-zinc-200">
+          <label className="block mb-1 font-medium text-txt-secondary">
             Fecha
           </label>
           <input
@@ -79,11 +79,11 @@ export default function AppointmentForm() {
             value={form.date}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-400 dark:bg-zinc-700 dark:text-white"
+            className="w-full px-3 py-2 rounded-control bg-surface-1 border border-border-default text-txt-primary placeholder:text-txt-muted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent-subtle"
           />
         </div>
         <div className="flex-1">
-          <label className="block mb-1 font-medium text-zinc-700 dark:text-zinc-200">
+          <label className="block mb-1 font-medium text-txt-secondary">
             Hora
           </label>
           <input
@@ -92,14 +92,14 @@ export default function AppointmentForm() {
             value={form.time}
             onChange={handleChange}
             required
-            className="w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-400 dark:bg-zinc-700 dark:text-white"
+            className="w-full px-3 py-2 rounded-control bg-surface-1 border border-border-default text-txt-primary placeholder:text-txt-muted focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent-subtle"
           />
         </div>
         <div className="flex-none md:self-end">
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition-colors duration-200 disabled:opacity-50"
+            className="w-full bg-accent hover:bg-accent-hover text-white font-semibold py-2 px-4 rounded-control transition-colors duration-200 disabled:opacity-50"
           >
             {loading ? "Enviando..." : "Agendar cita"}
           </button>

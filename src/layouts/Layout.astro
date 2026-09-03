@@ -31,6 +31,19 @@ import NavbarMobile from "@components/NavbarMobile";
     <title>{title}</title>
     <link rel="sitemap" href="/sitemap-index.xml" />
 
+    <script is:inline>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var dark =
+            stored === "dark" ||
+            (!stored &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+
     <script
       is:inline
       src="https://cdn.botpress.cloud/webchat/v3.2/inject.js"
@@ -58,12 +71,81 @@ import NavbarMobile from "@components/NavbarMobile";
   </body>
 </html>
 <style is:global>
+  :root {
+    /* Surfaces — light mode: airy with soft shadows */
+    --surface-base: #f5f7fb;
+    --surface-1: #ffffff;
+    --surface-2: #ffffff;
+    --surface-3: #ffffff;
+
+    /* Borders — whisper-quiet, blend with bg */
+    --border-subtle: rgba(15, 23, 42, 0.06);
+    --border-default: rgba(15, 23, 42, 0.1);
+    --border-emphasis: rgba(15, 23, 42, 0.16);
+    --border-accent: rgba(59, 130, 246, 0.35);
+
+    /* Text hierarchy — four levels */
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+
+    /* Accent */
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --accent-dark: #1e3a8a;
+    --accent-subtle: rgba(59, 130, 246, 0.16);
+
+    --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.04),
+      0 4px 16px -2px rgba(15, 23, 42, 0.06);
+    --shadow-card-hover: 0 2px 4px rgba(15, 23, 42, 0.05),
+      0 12px 28px -4px rgba(15, 23, 42, 0.12);
+  }
+
+  .dark {
+    /* Surfaces — dark mode: warm slate, shift only lightness, one hue */
+    --surface-base: #0b1220;
+    --surface-1: #111a2c;
+    --surface-2: #16213a;
+    --surface-3: #1c2947;
+
+    /* Borders — low-opacity white, progress by importance */
+    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-default: rgba(255, 255, 255, 0.1);
+    --border-emphasis: rgba(255, 255, 255, 0.16);
+    --border-accent: rgba(96, 165, 250, 0.3);
+
+    /* Text — inverted hierarchy */
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-muted: #64748b;
+
+    /* Accent — lifted for dark contrast */
+    --accent: #3b82f6;
+    --accent-hover: #60a5fa;
+    --accent-dark: #1d4ed8;
+    --accent-subtle: rgba(59, 130, 246, 0.18);
+
+    --shadow-card: 0 0 0 1px rgba(255, 255, 255, 0.06);
+    --shadow-card-hover: 0 0 0 1px rgba(255, 255, 255, 0.1),
+      0 12px 32px -8px rgba(0, 0, 0, 0.4);
+  }
+
   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
+
   html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--surface-base);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   a,
@@ -72,56 +154,74 @@ import NavbarMobile from "@components/NavbarMobile";
     font-family: "Orbitron Variable", sans-serif;
   }
   p,
-  label {
+  label,
+  input,
+  textarea {
     font-family: "Kanit", sans-serif;
   }
   h1,
   h2 {
     font-family: "Paytone One", sans-serif;
+    letter-spacing: -0.01em;
   }
   h3 {
     font-family: "Rubik Variable", sans-serif;
-  }
-  .glass {
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(2, 6, 23, 0.06);
+    letter-spacing: -0.01em;
   }
 
-  /* If you use Tailwind's class-based dark mode */
+  .glass {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-subtle);
+  }
   .dark .glass {
-    background: hsl(220 22% 14% / 0.4);
-    border: 1px solid hsl(217 91% 55% / 0.15);
+    background: var(--surface-1);
+    border: 1px solid var(--border-subtle);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-default);
+    box-shadow: var(--shadow-card);
   }
   .dark .glass-card {
-    background: hsl(220 22% 18% / 0.5);
+    background: var(--surface-1);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid hsl(217 91% 55% / 0.2);
-    box-shadow: 0 10px 40px -10px hsl(217 91% 55% / 0.3);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-card);
   }
-  .glass-card {
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid hsl(217 91% 55% / 0.2);
-    box-shadow: 0 10px 40px -10px hsl(217 91% 55% / 0.3);
-  }
-  body {
-    background-color: #f8fafc;
-  }
-  .dark body {
-    background-color: #1a212d;
-  }
+
   .gradient-blue {
-    background: linear-gradient(135deg, hsl(217 91% 55%), hsl(210 100% 60%));
+    background: linear-gradient(
+      135deg,
+      var(--accent),
+      hsl(210 86% 56%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .dark .gradient-blue {
+    background: linear-gradient(
+      135deg,
+      var(--accent-hover),
+      hsl(210 90% 68%)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* Section heading sizes are managed with Tailwind classes on each
-     component. Removed the temporary global overrides to rely only on
-     utility classes. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
 </style>

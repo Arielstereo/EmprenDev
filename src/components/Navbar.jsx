@@ -6,31 +6,32 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="py-3 sm:py-6 w-full fixed top-0 left-0 right-0 z-50 glass border-b border-border/40">
-      <div className="flex gap-2 sm:gap-4 justify-between sm:justify-center items-center px-3 sm:px-4">
+    <nav className="py-3 sm:py-4 w-full fixed top-0 left-0 right-0 z-50 glass border-b border-border-default">
+      <div className="max-w-screen-2xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-10">
         <Logo />
-        <ul className="hidden md:flex items-center justify-center gap-8 lg:gap-12 pt-2 sm:pt-7">
-          <li className="text-base lg:text-lg">
+
+        <ul className="hidden md:flex items-center justify-center gap-8 lg:gap-10">
+          <li>
             <a
-              className="text-slate-950 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 transition"
+              className="text-sm lg:text-base font-medium text-txt-secondary hover:text-txt-primary dark:hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
               href="#features"
               aria-label="Ir a la sección de preguntas frecuentes"
             >
               Faq
             </a>
           </li>
-          <li className="text-base lg:text-lg">
+          <li>
             <a
-              className="text-slate-950 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 transition"
+              className="text-sm lg:text-base font-medium text-txt-secondary hover:text-txt-primary dark:hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
               href="#services"
               aria-label="Ir a la sección de servicios"
             >
               Servicios
             </a>
           </li>
-          <li className="text-base lg:text-lg">
+          <li>
             <a
-              className="text-slate-950 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 transition"
+              className="text-sm lg:text-base font-medium text-txt-secondary hover:text-txt-primary dark:hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
               href="#projects"
               aria-label="Ir a la sección de eventos"
             >
@@ -39,7 +40,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              className="text-white bg-blue-500 hover:bg-blue-600 p-2 sm:p-3 rounded-2xl text-sm lg:text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 transition"
+              className="inline-flex items-center rounded-lg bg-accent px-4 py-2.5 text-sm lg:text-base font-semibold text-white hover:bg-accent-hover shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
               href="#contact"
               aria-label="Ir a la sección de contacto"
             >
@@ -48,32 +49,17 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="flex md:hidden gap-2">
-          <ModeButton />
-          <button
-            className="md:hidden p-2 text-slate-950 dark:text-white"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Abrir menú"
-          >
-            <span
-              className="icon-[mdi--menu] w-6 h-6"
-              role="img"
-              aria-hidden="true"
-            ></span>
-          </button>
-        </div>
-
         <div className="hidden md:block">
           <ModeButton />
         </div>
       </div>
 
       {menuOpen && (
-        <div className="md:hidden mt-2 pb-3 px-3 border-t border-border/40">
-          <ul className="flex flex-col gap-2">
+        <div className="md:hidden mt-2 pb-3 px-4 border-t border-border-default">
+          <ul className="flex flex-col gap-1 pt-3">
             <li>
               <a
-                className="block py-2 px-3 text-slate-950 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 hover:bg-blue-500/10 rounded transition text-sm"
+                className="block py-2.5 px-3 rounded-lg text-txt-primary dark:text-white hover:bg-accent-subtle hover:text-accent transition-colors text-sm font-medium"
                 href="#features"
                 onClick={() => setMenuOpen(false)}
               >
@@ -82,8 +68,8 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="block py-2 px-3 text-slate-950 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 hover:bg-blue-500/10 rounded transition text-sm"
-                href="#price"
+                className="block py-2.5 px-3 rounded-lg text-txt-primary dark:text-white hover:bg-accent-subtle hover:text-accent transition-colors text-sm font-medium"
+                href="#services"
                 onClick={() => setMenuOpen(false)}
               >
                 Servicios
@@ -91,16 +77,16 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="block py-2 px-3 text-slate-950 dark:text-white hover:text-blue-600 dark:hover:text-blue-300 hover:bg-blue-500/10 rounded transition text-sm"
+                className="block py-2.5 px-3 rounded-lg text-txt-primary dark:text-white hover:bg-accent-subtle hover:text-accent transition-colors text-sm font-medium"
                 href="#projects"
                 onClick={() => setMenuOpen(false)}
               >
                 Proyectos
               </a>
             </li>
-            <li>
+            <li className="mt-2">
               <a
-                className="block py-2 px-3 text-white bg-blue-500 hover:bg-blue-600 rounded text-sm transition"
+                className="block py-2.5 px-3 text-center rounded-lg bg-accent hover:bg-accent-hover text-white font-semibold transition-colors"
                 href="#contact"
                 onClick={() => setMenuOpen(false)}
               >

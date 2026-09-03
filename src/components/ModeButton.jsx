@@ -29,30 +29,29 @@ const ModeButton = () => {
       setIsDarkMode(true);
     }
   };
+
   return (
-    <div className="absolute right-10 md:right-32 top-11">
-      <button
-        onClick={toggleTheme}
-        aria-label={
-          isDarkMode ? "Cambiar a modo claro" : "Cambiar a modo oscuro"
-        }
-        className="focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500"
-      >
-        {isDarkMode ? (
-          <span
-            className="icon-[line-md--sun-rising-filled-loop] text-3xl text-slate-100 mt-2"
-            role="img"
-            aria-hidden="true"
-          ></span>
-        ) : (
-          <span
-            className="icon-[line-md--moon-filled-loop] text-3xl text-slate-900 mt-2"
-            role="img"
-            aria-hidden="true"
-          ></span>
-        )}
-      </button>
-    </div>
+    <button
+      onClick={toggleTheme}
+      aria-label={
+        isDarkMode ? "Cambiar a modo claro" : "Cambiar a modo oscuro"
+      }
+      className="w-10 h-10 flex items-center justify-center rounded-full text-txt-secondary hover:text-accent dark:hover:text-accent-hover hover:bg-accent-subtle focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
+    >
+      {isDarkMode ? (
+        <span
+          className="icon-[line-md--sun-rising-filled-loop] text-2xl"
+          role="img"
+          aria-hidden="true"
+        ></span>
+      ) : (
+        <span
+          className="icon-[line-md--moon-filled-loop] text-2xl"
+          role="img"
+          aria-hidden="true"
+        ></span>
+      )}
+    </button>
   );
 };
 

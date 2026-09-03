@@ -1,21 +1,19 @@
 const Logo = () => {
   return (
-    <div className="absolute left-0 md:left-10 top-7">
-      <a
-        href="/"
-        className="flex flex-row mx-0 items-center mt-1 focus-visible:outline-blue-500"
-        aria-label="Ir al inicio de EmprenDev"
-      >
-        <img
-          src="./logo_png.png"
-          className="w-16 h-16 rounded-full"
-          alt="logo EmprenDev"
-        />
-        <span className="text-black dark:text-white hover:text-slate-700 dark:hover:text-slate-200 text-lg font-semibold">
-          EmprenDev
-        </span>
-      </a>
-    </div>
+    <a
+      href="/"
+      className="flex items-center gap-2 shrink-0 focus-visible:outline-accent"
+      aria-label="Ir al inicio de EmprenDev"
+    >
+      <img
+        src="./logo_png.png"
+        className="w-10 h-10 rounded-full ring-1 ring-border-default object-cover"
+        alt="logo EmprenDev"
+      />
+      <span className="text-lg font-bold text-txt-primary hover:text-accent dark:hover:text-accent-hover transition-colors">
+        EmprenDev
+      </span>
+    </a>
   );
 };
 

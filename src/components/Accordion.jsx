@@ -41,9 +41,7 @@ export default function Accordion({ items = [], className = "" }) {
         return (
           <div
             key={i}
-            className={
-              "relative glass-card rounded-lg border bg-transparent border-gray-200 dark:border-zinc-700 shadow-sm overflow-hidden transition-colors"
-            }
+            className="relative glass-card rounded-card border-border-default overflow-hidden transition-colors"
             data-aos={it.aos ?? undefined}
           >
             <button
@@ -52,21 +50,21 @@ export default function Accordion({ items = [], className = "" }) {
               aria-controls={`panel-${i}`}
               id={`accordion-${i}`}
               onClick={() => toggle(i)}
-              className="w-full text-left px-5 py-4 flex items-start justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+              className="w-full text-left px-5 py-4 flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset"
             >
               <div className="flex items-center gap-4">
-                <span className="inline-flex h-10 w-10 p-4 md:h-12 md:w-12 items-center justify-center rounded-full bg-blue-500 text-white shadow-sm">
-                  <span className="text-xl md:text-2xl">?</span>
+                <span className="inline-flex h-10 w-10 md:h-11 md:w-11 items-center justify-center rounded-full bg-accent-subtle text-accent dark:text-accent-hover text-xl md:text-2xl font-bold shrink-0">
+                  ?
                 </span>
-                <h3 className="text-lg font-semibold text-gray-800 hover:text-blue-500 hover:dark:text-blue-500 dark:text-gray-100">
+                <h3 className="text-base sm:text-lg font-semibold text-txt-primary transition-colors">
                   {it.title}
                 </h3>
               </div>
 
               <svg
-                className={`h-6 w-6 transform transition-transform duration-200 ${
+                className={`h-5 w-5 shrink-0 transform transition-transform duration-200 ${
                   isOpen ? "rotate-180" : "rotate-0"
-                } text-gray-600 dark:text-gray-200`}
+                } text-txt-muted`}
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -93,7 +91,7 @@ export default function Accordion({ items = [], className = "" }) {
               }`}
               // maxHeight se controla dinámicamente vía JS para transición suave
             >
-              <p className="text-gray-500 dark:text-gray-400">{it.content}</p>
+              <p className="text-txt-secondary">{it.content}</p>
             </div>
           </div>
         );

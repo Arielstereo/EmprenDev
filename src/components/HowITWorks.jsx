@@ -1,92 +1,60 @@
-import "aos/dist/aos.css";
+const steps = [
+  {
+    icon: "icon-[bi--1-circle-fill]",
+    title: "Conversemos",
+    desc: "Contactanos y contanos sobre tu negocio",
+  },
+  {
+    icon: "icon-[bi--2-circle-fill]",
+    title: "Propuesta",
+    desc: "Diseñamos una solución a tu medida.",
+  },
+  {
+    icon: "icon-[bi--3-circle-fill]",
+    title: "Desarrollo",
+    desc: "Creamos tu proyecto con actualizaciones constantes",
+  },
+  {
+    icon: "icon-[bi--4-circle-fill]",
+    title: "A crecer!",
+    desc: "Lanzamos y te acompañamos en el crecimiento",
+  },
+];
+
+const StepCard = ({ step }) => (
+  <div className="flex flex-col items-center text-center p-6">
+    <i
+      className={`${step.icon} w-10 h-10 sm:w-12 sm:h-12 text-accent`}
+      role="img"
+      aria-hidden="true"
+    ></i>
+    <h3 className="mt-4 mb-2 text-lg font-semibold text-accent md:text-xl">
+      {step.title}
+    </h3>
+    <p className="text-txt-secondary text-center">{step.desc}</p>
+  </div>
+);
 
 const HowItWorks = () => {
   return (
-    <section className="py-14 md:py-24 dark:text-white">
+    <section className="py-16 md:py-24 text-txt-primary">
       <div className="container px-4 mx-auto">
-        <div className="flex flex-col gap-2">
-          <div className="flex gap-2 justify-center items-center">
-            <h2 className="text-center text-4xl lg:text-[40px] font-bold leading-tight text-gray-800 dark:text-slate-100">
-              Cómo empezar{" "}
-              <div className="gradient-blue">en 4 pasos simples</div>
-            </h2>
-            <img
-              src="./logo_png.png"
-              className="md:flex h-24 w-24 rounded-full"
-              alt="logo"
-            />
-          </div>
+        <div className="flex flex-col items-center gap-4 mb-12 md:mb-16">
+          <h2 className="text-center text-4xl lg:text-[40px] font-bold leading-tight text-txt-primary">
+            Cómo empezar{" "}
+            <span className="gradient-blue">en 4 pasos simples</span>
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-2 mt-12">
-          <div>
-            <div className="p-6 lg:p-12 flex flex-col justify-center items-center">
-              <div className="text-[22px] text-white">
-                <i
-                  className="icon-[bi--1-circle-fill] w-12 h-12 text-slate-800 dark:text-slate-100"
-                  role="img"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
-                Conversemos
-              </h3>
-              <p className="text-gray-900 dark:text-gray-100 text-center">
-                Contactanos y contanos sobre tu negocio
-              </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          {steps.map((step, i) => (
+            <div
+              key={i}
+              className="glass-card rounded-card hover:shadow-card-hover transition-shadow"
+            >
+              <StepCard step={step} />
             </div>
-          </div>
-          <div>
-            <div className="p-6 lg:p-12 flex flex-col justify-center items-center">
-              <div className="text-[22px] text-white">
-                <i
-                  className="icon-[bi--2-circle-fill] w-12 h-12 text-slate-800 dark:text-slate-100"
-                  role="img"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
-                Propuesta
-              </h3>
-              <p className="text-gray-900 dark:text-gray-100 text-center">
-                Diseñamos una solución a tu medida.
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="p-6 lg:p-12 flex flex-col justify-center items-center">
-              <div className="text-[22px] text-white">
-                <i
-                  className="icon-[bi--3-circle-fill] w-12 h-12 text-slate-800 dark:text-slate-100"
-                  role="img"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
-                Desarrollo
-              </h3>
-              <p className="text-gray-900 dark:text-gray-100 text-center">
-                Creamos tu proyecto con actualizaciones constantes
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="p-6 lg:p-12 flex flex-col justify-center items-center">
-              <div className="text-[22px] text-white">
-                <i
-                  className="icon-[bi--4-circle-fill] w-12 h-12 text-slate-800 dark:text-slate-100"
-                  role="img"
-                  aria-hidden="true"
-                ></i>
-              </div>
-              <h3 className="mb-3 text-lg font-semibold text-blue-500 md:text-xl">
-                A crecer!
-              </h3>
-              <p className="text-gray-900 dark:text-gray-100 text-center">
-                Lanzamos y te acompañamos en el crecimiento
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

@@ -2,63 +2,61 @@
 import ContactForm from "./ContactForm";
 ---
 
-<section id="contact" class="w-full py-10 md:py-16 lg:py-20 text-white">
+<section id="contact" class="w-full py-14 md:py-20 lg:py-24">
   <div
-    class="flex justify-center flex-col items-center text-center px-4 mb-8 md:mb-12"
+    class="flex flex-col items-center justify-center text-center px-4 mb-10 md:mb-14"
   >
     <h2
-      class="text-3xl lg:text-[40px] font-bold mb-4 flex flex-col sm:flex-row gap-2 justify-center text-slate-800 dark:text-white"
+      class="text-3xl lg:text-[40px] font-bold mb-4 flex flex-col sm:flex-row gap-2 justify-center text-txt-primary"
     >
-      Hablemos de tu <div class="gradient-blue">proyecto</div>
+      Hablemos de tu <span class="gradient-blue">proyecto</span>
     </h2>
-    <p class="text-lg mb-0 text-gray-400 max-w-2xl">
+    <p class="text-lg text-txt-secondary max-w-2xl">
       Te ayudamos a llevar tu negocio al siguiente nivel.
     </p>
   </div>
   <div
     class="container mx-auto px-4 flex flex-col lg:flex-row justify-center lg:gap-12 xl:gap-20 items-start lg:items-center"
   >
-    <div class="w-full lg:w-auto text-slate-800 dark:text-white mb-8 lg:mb-0">
+    <div class="w-full lg:w-auto mb-10 lg:mb-0">
       <h3
-        class="text-xl md:text-2xl lg:text-[28px] font-semibold leading-snug mb-6 sm:mb-8"
+        class="text-xl md:text-2xl lg:text-[28px] font-semibold leading-snug mb-8 text-txt-primary"
       >
         Conectá con nosotros
       </h3>
-      <div
-        class="p-4 sm:p-6 border-2 border-blue-500 glass-card flex gap-3 sm:gap-4 rounded-xl mb-4 sm:mb-6"
-      >
-        <div class="flex items-start sm:items-center gap-3 sm:gap-4">
+
+      <div class="flex flex-col gap-4 max-w-md mx-auto lg:mx-0">
+        <a
+          href="mailto:emprendev2.0@gmail.com"
+          class="glass-card p-4 sm:p-5 flex items-center gap-3 sm:gap-4 rounded-card hover:shadow-card-hover transition-shadow"
+        >
           <span
-            class="icon-[entypo--email] w-6 h-6 sm:w-8 sm:h-8 bg-blue-500 flex-shrink-0 mt-1 sm:mt-0"
+            class="icon-[entypo--email] w-9 h-9 sm:w-10 sm:h-10 p-2 bg-accent-subtle text-accent dark:text-accent-hover rounded-xl flex-shrink-0"
             role="img"
             aria-hidden="true"></span>
-          <div class="flex flex-col gap-2 sm:gap-4">
-            <span class="text-sm sm:text-base">Email:</span>
-            <a
-              href="mailto:contacto@emprendev.com"
-              class="text-sm sm:text-base hover:text-blue-400 transition"
-              >emprendev2.0@gmail.com</a
-            >
-          </div>
-        </div>
-      </div>
-      <div
-        class="p-4 sm:p-6 border-2 border-blue-500 glass-card flex gap-3 sm:gap-4 rounded-xl"
-      >
-        <div class="flex items-start sm:items-center gap-3 sm:gap-4">
+          <span class="flex flex-col min-w-0">
+            <span class="text-sm text-txt-muted">Email:</span>
+            <span class="text-sm sm:text-base text-txt-primary break-all">
+              emprendev2.0@gmail.com
+            </span>
+          </span>
+        </a>
+
+        <a
+          href="https://wa.me/1126922128"
+          class="glass-card p-4 sm:p-5 flex items-center gap-3 sm:gap-4 rounded-card hover:shadow-card-hover transition-shadow"
+        >
           <span
-            class="icon-[logos--whatsapp-icon] w-6 h-6 sm:w-8 sm:h-8 flex-shrink-0 mt-1 sm:mt-0"
+            class="icon-[logos--whatsapp-icon] w-9 h-9 sm:w-10 sm:h-10 p-2 rounded-xl flex-shrink-0"
             role="img"
             aria-hidden="true"></span>
-          <div class="flex flex-col gap-2 sm:gap-4">
-            <span class="text-sm sm:text-base">WhatsApp:</span>
-            <a
-              href="https://wa.me/1126922128"
-              class="text-sm sm:text-base hover:text-blue-400 transition"
-              >1126922128</a
-            >
-          </div>
-        </div>
+          <span class="flex flex-col min-w-0">
+            <span class="text-sm text-txt-muted">WhatsApp:</span>
+            <span class="text-sm sm:text-base text-txt-primary">
+              1126922128
+            </span>
+          </span>
+        </a>
       </div>
     </div>
 

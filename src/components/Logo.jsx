@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
     <a
-      href="/"
+      href="#inicio"
       className="flex items-center gap-2 shrink-0 focus-visible:outline-accent"
       aria-label="Ir al inicio de EmprenDev"
     >

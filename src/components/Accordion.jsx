@@ -41,7 +41,7 @@ export default function Accordion({ items = [], className = "" }) {
         return (
           <div
             key={i}
-            className="relative glass-card rounded-card border-border-default overflow-hidden transition-colors"
+            className="relative bg-black rounded-card border border-accent overflow-hidden transition-colors"
             data-aos={it.aos ?? undefined}
           >
             <button
@@ -53,7 +53,7 @@ export default function Accordion({ items = [], className = "" }) {
               className="w-full text-left px-5 py-4 flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset"
             >
               <div className="flex items-center gap-4">
-                <span className="inline-flex h-10 w-10 md:h-11 md:w-11 items-center justify-center rounded-full bg-accent-subtle text-accent dark:text-accent-hover text-xl md:text-2xl font-bold shrink-0">
+                <span className="inline-flex h-10 w-10 md:h-11 md:w-11 items-center justify-center rounded-full bg-accent-subtle text-accent dark:text-accent-hover text-xl md:text-2xl font-bold shrink-0 border border-accent">
                   ?
                 </span>
                 <h3 className="text-base sm:text-lg font-semibold text-txt-primary transition-colors">

@@ -1,9 +1,16 @@
 import { useState, useEffect } from "react";
 import Logo from "./Logo";
-import ModeButton from "./ModeButton";
 
 export default function NavbarMobile() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     document.body.classList.toggle("overflow-hidden", open);
@@ -11,7 +18,13 @@ export default function NavbarMobile() {
   }, [open]);
 
   return (
-    <nav className="w-full fixed top-0 left-0 right-0 z-50 md:hidden glass border-b border-border-default">
+    <nav
+      className={`w-full fixed top-0 left-0 right-0 z-50 md:hidden transition-[background-color,border-color] duration-300 ${
+        scrolled
+          ? "glass-nav shadow-lg shadow-black/20"
+          : "border-b border-transparent"
+      }`}
+    >
       <div className="max-w-screen-2xl mx-auto px-4 flex items-center justify-between h-20">
         <Logo />
 
@@ -21,7 +34,7 @@ export default function NavbarMobile() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
-            className="p-2 rounded-lg text-txt-primary dark:text-white hover:bg-accent-subtle focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-colors"
+            className="p-2 rounded-lg text-txt-primary bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-colors"
           >
             <span
               className={`block w-6 h-0.5 bg-current transform transition duration-300 ${
@@ -50,11 +63,7 @@ export default function NavbarMobile() {
             : "scale-y-0 opacity-0 pointer-events-none"
         }`}
       >
-        <div className="glass px-4 py-4 shadow-xl dark:shadow-black/40">
-          <div className="flex justify-end mb-3">
-            <ModeButton />
-          </div>
-
+        <div className="bg-black px-4 py-4 shadow-xl">
           <ul className="flex flex-col gap-1">
             <li>
               <a
@@ -86,7 +95,7 @@ export default function NavbarMobile() {
             <li className="mt-2">
               <a
                 onClick={() => setOpen(false)}
-                className="block text-white bg-accent hover:bg-accent-hover py-2.5 px-3 rounded-lg text-center font-semibold transition-colors"
+                className="block text-white bg-transparent border border-accent hover:bg-accent hover:text-white py-2.5 px-3 rounded-lg text-center font-semibold transition-colors"
                 href="#contact"
               >
                 Consulta ahora

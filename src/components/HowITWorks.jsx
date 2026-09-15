@@ -1,6 +1,6 @@
 const steps = [
   {
-    icon: "icon-[bi--1-circle-fill]",
+    icon: "icon-[bi--1-circle]",
     title: "Conversemos",
     desc: "Contactanos y contanos sobre tu negocio",
   },
@@ -10,7 +10,7 @@ const steps = [
     desc: "Diseñamos una solución a tu medida.",
   },
   {
-    icon: "icon-[bi--3-circle-fill]",
+    icon: "icon-[bi--3-circle]",
     title: "Desarrollo",
     desc: "Creamos tu proyecto con actualizaciones constantes",
   },
@@ -42,7 +42,9 @@ const HowItWorks = () => {
         <div className="flex flex-col items-center gap-4 mb-12 md:mb-16">
           <h2 className="text-center text-4xl lg:text-[40px] font-bold leading-tight text-txt-primary">
             Cómo empezar{" "}
-            <span className="gradient-blue">en 4 pasos simples</span>
+          </h2>
+          <h2 className="text-amber-300 text-4xl lg:text-[40px] font-bold ml-2">
+            en 4 pasos simples
           </h2>
         </div>
 
@@ -50,7 +52,7 @@ const HowItWorks = () => {
           {steps.map((step, i) => (
             <div
               key={i}
-              className="glass-card rounded-card hover:shadow-card-hover transition-shadow"
+              className="bg-black border border-accent rounded-card hover:shadow-card-hover transition-shadow"
             >
               <StepCard step={step} />
             </div>

@@ -1,12 +1,25 @@
 import Logo from "./Logo";
-import ModeButton from "./ModeButton";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="py-3 sm:py-4 w-full fixed top-0 left-0 right-0 z-50 glass border-b border-border-default">
+    <nav
+      className={`py-3 sm:py-4 w-full fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,box-shadow] duration-300 ${
+        scrolled
+          ? "glass-nav shadow-lg shadow-black/20"
+          : "border-b border-transparent"
+      }`}
+    >
       <div className="max-w-screen-2xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-10">
         <Logo />
 
@@ -40,7 +53,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              className="inline-flex items-center rounded-lg bg-accent px-4 py-2.5 text-sm lg:text-base font-semibold text-white hover:bg-accent-hover shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
+              className="inline-flex items-center rounded-lg bg-transparent hover:bg-accent-subtle border border-accent px-4 py-2.5 text-sm lg:text-base font-semibold text-white shadow-glow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent transition-colors"
               href="#contact"
               aria-label="Ir a la sección de contacto"
             >
@@ -49,9 +62,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="hidden md:block">
-          <ModeButton />
-        </div>
+        <div className="hidden md:block w-10 h-10" aria-hidden="true"></div>
       </div>
 
       {menuOpen && (

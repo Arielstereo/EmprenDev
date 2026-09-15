@@ -27,9 +27,12 @@ const Features = () => {
   return (
     <div id="features" className="py-20 md:py-28">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-        <div className="flex justify-center items-center mb-12 md:mb-16">
+        <div className="flex flex-col md:flex-row gap-2 justify-center items-center mb-12 md:mb-16">
           <h2 className="text-4xl lg:text-[40px] font-bold leading-tight text-txt-primary">
-            Preguntas <span className="gradient-blue">frecuentes</span>
+            Preguntas
+          </h2>
+          <h2 className="text-amber-300 text-4xl lg:text-[40px] font-bold leading-tight">
+            frecuentes
           </h2>
         </div>
 
@@ -42,7 +45,7 @@ const Features = () => {
           ¿Listo para transformar tu negocio?
         </h3>
         <a
-          className="inline-flex items-center rounded-lg bg-green-600 px-8 py-3.5 text-base font-semibold text-white hover:bg-green-500 shadow-glow transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
+          className="inline-flex items-center rounded-lg border border-white bg-green-800 px-8 py-3.5 text-base font-semibold text-white hover:bg-green-600 shadow-glow transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
           role="button"
           href="https://api.whatsapp.com/send?phone=+5491126922128&text=Hola%20EmprenDev,%20necesito%20asesoramiento:"
           aria-label="Consultar por WhatsApp y comenzar tu sitio web"
@@ -55,7 +58,7 @@ const Features = () => {
           ></i>
           Consulta por WhatsApp!
         </a>
-        <p className="text-base text-txt-muted">
+        <p className="text-base text-amber-300">
           Respondemos en minutos • Sin costo ni compromiso • Presupuesto
           personalizado
         </p>

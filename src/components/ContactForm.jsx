@@ -69,7 +69,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full mx-auto mb-8 sm:mb-12 glass-card rounded-card">
+    <div className="w-full mx-auto mb-8 sm:mb-12 bg-black border border-accent rounded-card">
       <form
         onSubmit={sendEmail}
         className="flex flex-col gap-6 p-6 sm:p-8 lg:p-10"
@@ -174,7 +174,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="w-full sm:w-auto rounded-lg bg-accent hover:bg-accent-hover px-8 py-3.5 text-center font-semibold text-white shadow-glow transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          className="w-full sm:w-auto rounded-lg bg-transparent border border-accent hover:bg-accent-subtle px-8 py-3.5 text-center font-semibold text-white shadow-glow transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         >
           Enviar consulta
         </button>

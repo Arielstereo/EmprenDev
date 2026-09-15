@@ -1,6 +1,15 @@
 const portfolios = [
   {
-    img: "/tapeo.jpeg",
+    img: "/diablitas.png",
+    title: "Diablitas Bags",
+    details:
+      "Sitio web profesional para venta de bolsos. Presenta productos con imágenes de alta calidad, descripciones detalladas y precios. Incluye buscador de productos y una página de contacto para consultas. Diseño atractivo y fácil navegación.",
+    href: "https://diablitas.empren.dev/",
+    span1: "Emprendimiento",
+    span2: "Reservas por WhatsApp",
+  },
+  {
+    img: "/tapeo.png",
     title: "Tapeo Cervecería",
     details:
       "Menú digital interactivo pensado para cervecerías y bares, pero adaptable a otros negocios. Los clientes pueden escanear un QR y acceder al menú desde su celular, ver imágenes de los productos, consultar precios y realizar pedidos de forma ágil. El diseño es adaptable a cualquier dispositivo.",
@@ -9,18 +18,27 @@ const portfolios = [
     span2: "Menú Digital",
   },
   {
-    img: "/diablitas.png",
-    title: "Diablitas Bags",
+    img: "/stock-app.png",
+    title: "Stock App",
     details:
-      "Sitio web profesional para venta de bolsos. Presenta productos con imágenes de alta calidad, descripciones detalladas y precios. Incluye buscador de productos y una página de contacto para consultas. Diseño atractivo y fácil navegación.",
-    href: "https://diablitas-bags.empren.dev/",
+      "Aplicación de gestión de inventario para pequeños y medianos negocios. Permite controlar el stock en tiempo real, generar reportes y recibir notificaciones de bajo inventario.",
+    href: "#inicio",
+    span1: "Aplicación Web",
+    span2: "Gestión de Inventario",
+  },
+  {
+    img: "/sublime-page.jpeg",
+    title: "Sublime",
+    details:
+      "Sitio web para un emprendimiento de productos personalizados. Presenta los productos con imágenes de alta calidad, descripciones detalladas y precios. Incluye botón de reserva por WhatsApp y redes sociales. Diseño atractivo y fácil navegación.",
+    href: "https://sublime.empren.dev/",
     span1: "Emprendimiento",
     span2: "Reservas por WhatsApp",
   },
 ];
 
 const PortfolioItem = ({ item }) => (
-  <div className="group overflow-hidden glass-card rounded-card h-full transition-all hover:-translate-y-1 hover:shadow-card-hover">
+  <div className="group overflow-hidden bg-black border border-accent rounded-card h-full transition-all hover:-translate-y-1 hover:shadow-card-hover">
     <a href={item.href} target="_blank" rel="noopener noreferrer">
       <div className="relative overflow-hidden w-full h-48 sm:h-52 md:h-60">
         <img
@@ -59,18 +77,13 @@ const Portfolio = () => {
       <div className="container px-4 sm:px-6 mx-auto">
         <div className="flex flex-col gap-2 justify-center items-center mb-8 sm:mb-12">
           <div className="flex flex-col gap-2 w-full">
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center items-center">
+            <div className="flex flex-col gap-2 justify-center items-center">
               <h2 className="text-center text-4xl lg:text-[40px] font-bold leading-tight text-txt-primary">
                 Proyectos que
-                <span className="gradient-blue text-4xl lg:text-[40px] font-bold ml-2">
-                  generan resultados
-                </span>
               </h2>
-              <img
-                src="./logo_png.png"
-                className="hidden sm:block h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 rounded-full ring-1 ring-border-default object-cover flex-shrink-0"
-                alt="logo"
-              />
+              <h2 className="text-amber-300 text-4xl lg:text-[40px] font-bold ml-2">
+                generan resultados
+              </h2>
             </div>
             <p className="text-lg text-txt-secondary mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto text-center">
               Proyectos reales para clientes reales. Soluciones digitales
